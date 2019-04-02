@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Ka uru atu koe ki tenei rangahau hou - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Ko tenei rangahau hou %2$@ i hanga tata nei e %1$@ Ka taea e koe te whakautu i tenei wa",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Kua whiwhi koe i tetahi whakautu hou mai i te %1$@"
+    }
+}

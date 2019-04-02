@@ -1,0 +1,1820 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "topic_name": "Noticias",
+      "image": "http://localhost:3000/img_noticias.jpg"
+    },
+    {
+      "id": 2,
+      "topic_name": "Tecnología",
+      "image": "http://localhost:3000/img_tecnologia.jpg"
+    },
+    {
+      "id": 3,
+      "topic_name": "Fotografía",
+      "image": "http://localhost:3000/img_fotografia.jpg"
+    },
+    {
+      "id": 4,
+      "topic_name": "Música",
+      "image": "http://localhost:3000/img_musica.jpg"
+    },
+    {
+      "id": 5,
+      "topic_name": "Gastronomía",
+      "image": "http://localhost:3000/img_gastronomia.jpg"
+    },
+    {
+      "id": 6,
+      "topic_name": "Ciencias",
+      "image": "http://localhost:3000/img_ciencias.jpg"
+    },
+    {
+      "id": 7,
+      "topic_name": "Deportes",
+      "image": "http://localhost:3000/img_deportes.jpg"
+    },
+    {
+      "id": 8,
+      "topic_name": "Viajes",
+      "image": "http://localhost:3000/img_viajes.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "William",
+      "image": "http://localhost:3000/users/img_4.jpg",
+      "group_id": 1,
+      "group_admin": false,
+      "user_name": "wbasabe",
+      "user_type": "Chuzz Active"
+    },
+    {
+      "id": 2,
+      "name": "Maylin",
+      "image": "http://localhost:3000/users/img_5.jpg",
+      "group_id": 1,
+      "group_admin": false
+    },
+    {
+      "id": 3,
+      "name": "Paola",
+      "image": "http://localhost:3000/users/img_1.jpg",
+      "group_id": 1,
+      "group_admin": false,
+      "phone_number": "+56949353422",
+      "email": "paolabasabe@gmail.com",
+      "gender": "GENDER_MALE",
+      "birthdate": "1980/02/10",
+      "sex_preference": "SEX_PREFERENCE_HETEROSEXUAL",
+      "answers_count": 100,
+      "groups_count": 10,
+      "favorites_count": 75,
+      "country": "Venezuela",
+      "user_name": "pao"
+    },
+    {
+      "id": 4,
+      "name": "Carlos",
+      "user_name": "carloscelebrity",
+      "image": "http://localhost:3000/users/img_2.jpg",
+      "group_id": 1,
+      "group_admin": false,
+      "polls_count": 100,
+      "followers": 15000,
+      "following": 1000,
+      "celebrity": true
+    },
+    {
+      "id": 5,
+      "name": "Jose",
+      "image": "http://localhost:3000/users/img_3.jpg",
+      "group_id": 1,
+      "group_admin": false
+    },
+    {
+      "id": 6,
+      "name": "Ruben",
+      "image": "http://localhost:3000/users/img_6.jpg",
+      "group_id": 1,
+      "group_admin": true
+    },
+    {
+      "id": 7
+    }
+  ],
+  "user_topics": [],
+  "terms": {
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo. Nunc euismod tellus sed consectetur suscipit. Sed eu euismod quam. Mauris erat sapien, egestas in nulla in, varius gravida sem. Fusce at aliquet metus, eget volutpat nibh. Suspendisse tristique, massa in tincidunt rutrum, ipsum purus condimentum diam, ac mattis nisi nibh eu mauris. Donec molestie blandit magna, in accumsan tellus pretium sit amet. In aliquam convallis porttitor. Vestibulum nec augue blandit, molestie mi dapibus, efficitur magna. Maecenas turpis lectus, tempor quis euismod sed, laoreet at nibh. Nam justo nulla, egestas sit amet magna sit amet, ornare ornare nulla. Sed lobortis ultrices dolor, non sollicitudin tellus fermentum et. Quisque arcu dui, pharetra eget risus id, venenatis pharetra dui. Vestibulum erat magna, fringilla non augue et, placerat eleifend sem. Praesent quis ullamcorper turpis, non facilisis sapien. Donec sollicitudin elit et tortor convallis rutrum. Pellentesque sollicitudin augue at erat eleifend vehicula. Aliquam vitae suscipit dui. In feugiat dui vitae consequat aliquam. Quisque vehicula ante a pulvinar porttitor. Morbi iaculis eleifend rutrum. Duis odio orci, tempor eget volutpat non, malesuada at velit. Sed lacinia diam sollicitudin, posuere enim vitae, lacinia sapien. Curabitur at nulla ut arcu semper tristique. Donec ornare sed odio non cursus. Phasellus varius nibh sit amet faucibus ornare. Fusce ac volutpat ligula. Ut sit amet accumsan augue. Suspendisse eleifend urna vel elementum sodales. Phasellus id urna sapien."
+  },
+  "chuzz": [
+    {
+      "id": 1,
+      "name": "Eleciones Presidenciales de Estados Unidos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 201,
+      "image": "http://localhost:3000/img-4.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": true,
+      "liked_by_you": true,
+      "last": 1,
+      "from_image": "http://localhost:3000/tele.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T16:16:25",
+      "origin": {
+        "name": "William",
+        "image": "http://localhost:3000/users/img_4.jpg"
+      },
+      "close": false
+    },
+    {
+      "id": 2,
+      "name": "Miss Venezuela 2017",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 458,
+      "image": "http://localhost:3000/img-2.jpg",
+      "live": true,
+      "hot": false,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 1,
+      "from_image": "http://localhost:3000/tele.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 3,
+      "name": "Final mundial 2017 Argentina vs Alemania",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo. Nunc euismod tellus sed consectetur suscipit. Sed eu euismod quam. Mauris erat sapien, egestas in nulla in, varius gravida sem. Fusce at aliquet metus, eget volutpat nibh. Suspendisse tristique, massa in tincidunt rutrum, ipsum purus condimentum diam, ac mattis nisi nibh eu mauris. Donec molestie blandit magna, in accumsan tellus pretium sit amet. In aliquam convallis porttitor. Vestibulum nec augue blandit, molestie mi dapibus, efficitur magna. Maecenas turpis lectus, tempor quis euismod sed, laoreet at nibh. Nam justo nulla, egestas sit amet magna sit amet, ornare ornare nulla. Sed lobortis ultrices dolor, non sollicitudin tellus fermentum et. Quisque arcu dui, pharetra eget risus id, venenatis pharetra dui. Vestibulum erat magna, fringilla non augue et, placerat eleifend sem. Praesent quis ullamcorper turpis, non facilisis sapien. Donec sollicitudin elit et tortor convallis rutrum. Pellentesque sollicitudin augue at erat eleifend vehicula. Aliquam vitae suscipit dui. In feugiat dui vitae consequat aliquam. Quisque vehicula ante a pulvinar porttitor. Morbi iaculis eleifend rutrum. Duis odio orci, tempor eget volutpat non, malesuada at velit. Sed lacinia diam sollicitudin, posuere enim vitae, lacinia sapien. Curabitur at nulla ut arcu semper tristique. Donec ornare sed odio non cursus. Phasellus varius nibh sit amet faucibus ornare. Fusce ac volutpat ligula. Ut sit amet accumsan augue. Suspendisse eleifend urna vel elementum sodales. Phasellus id urna sapien.",
+      "topic": "Deportes",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 25,
+      "image": "http://localhost:3000/img-5.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 1,
+      "from_image": "http://localhost:3000/cnn.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 4,
+      "name": "#FollwMe 2017",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Tecnología",
+      "watching": 56,
+      "likes": 10,
+      "opining": 58,
+      "image": "http://localhost:3000/img-1.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 1,
+      "from_image": "http://localhost:3000/cnn.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 5,
+      "name": "Bienal de Diseño",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Arte",
+      "watching": 486,
+      "likes": 0,
+      "opining": 78,
+      "image": "http://localhost:3000/img-3.jpg",
+      "live": true,
+      "hot": false,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 1,
+      "from_image": "http://localhost:3000/bcc.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 6,
+      "name": "Otra cosa",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Arte",
+      "watching": 106,
+      "likes": 5,
+      "opining": 101,
+      "image": "http://localhost:3000/img-15.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 2,
+      "from_image": "http://localhost:3000/abc.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 35,
+      "name": "Eleciones Presidenciales de Estados Unidos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 201,
+      "image": "http://localhost:3000/img-4.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": true,
+      "last": 2,
+      "from_image": "http://localhost:3000/tele.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 36,
+      "name": "Eleciones Presidenciales de Estados Unidos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 201,
+      "image": "http://localhost:3000/img-4.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": true,
+      "liked_by_you": true,
+      "last": 2,
+      "from_image": "http://localhost:3000/bcc.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 37,
+      "name": "Miss Venezuela 2017",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 458,
+      "image": "http://localhost:3000/img-2.jpg",
+      "live": true,
+      "hot": false,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 2,
+      "from_image": "http://localhost:3000/bcc.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 38,
+      "name": "Final mundial 2017 Argentina vs Alemania",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo. Nunc euismod tellus sed consectetur suscipit. Sed eu euismod quam. Mauris erat sapien, egestas in nulla in, varius gravida sem. Fusce at aliquet metus, eget volutpat nibh. Suspendisse tristique, massa in tincidunt rutrum, ipsum purus condimentum diam, ac mattis nisi nibh eu mauris. Donec molestie blandit magna, in accumsan tellus pretium sit amet. In aliquam convallis porttitor. Vestibulum nec augue blandit, molestie mi dapibus, efficitur magna. Maecenas turpis lectus, tempor quis euismod sed, laoreet at nibh. Nam justo nulla, egestas sit amet magna sit amet, ornare ornare nulla. Sed lobortis ultrices dolor, non sollicitudin tellus fermentum et. Quisque arcu dui, pharetra eget risus id, venenatis pharetra dui. Vestibulum erat magna, fringilla non augue et, placerat eleifend sem. Praesent quis ullamcorper turpis, non facilisis sapien. Donec sollicitudin elit et tortor convallis rutrum. Pellentesque sollicitudin augue at erat eleifend vehicula. Aliquam vitae suscipit dui. In feugiat dui vitae consequat aliquam. Quisque vehicula ante a pulvinar porttitor. Morbi iaculis eleifend rutrum. Duis odio orci, tempor eget volutpat non, malesuada at velit. Sed lacinia diam sollicitudin, posuere enim vitae, lacinia sapien. Curabitur at nulla ut arcu semper tristique. Donec ornare sed odio non cursus. Phasellus varius nibh sit amet faucibus ornare. Fusce ac volutpat ligula. Ut sit amet accumsan augue. Suspendisse eleifend urna vel elementum sodales. Phasellus id urna sapien.",
+      "topic": "Deportes",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 25,
+      "image": "http://localhost:3000/img-5.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 2,
+      "from_image": "http://localhost:3000/abc.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 39,
+      "name": "#FollwMe 2017",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Tecnología",
+      "watching": 56,
+      "likes": 10,
+      "opining": 58,
+      "image": "http://localhost:3000/img-1.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 3,
+      "from_image": "http://localhost:3000/cnn.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 40,
+      "name": "Bienal de Diseño",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Arte",
+      "watching": 486,
+      "likes": 0,
+      "opining": 78,
+      "image": "http://localhost:3000/img-3.jpg",
+      "live": true,
+      "hot": false,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 47,
+      "from_image": "http://localhost:3000/abc.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 41,
+      "name": "Otra cosa",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Arte",
+      "watching": 106,
+      "likes": 5,
+      "opining": 101,
+      "image": "http://localhost:3000/img-15.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 47,
+      "from_image": "http://localhost:3000/cnn.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 42,
+      "name": "Eleciones Presidenciales de Estados Unidos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 201,
+      "image": "http://localhost:3000/img-4.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": true,
+      "liked_by_you": true,
+      "last": 47,
+      "from_image": "http://localhost:3000/bcc.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 43,
+      "name": "Miss Venezuela 2017",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 458,
+      "image": "http://localhost:3000/img-2.jpg",
+      "live": true,
+      "hot": false,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 47,
+      "from_image": "http://localhost:3000/bcc.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 44,
+      "name": "Final mundial 2017 Argentina vs Alemania",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo. Nunc euismod tellus sed consectetur suscipit. Sed eu euismod quam. Mauris erat sapien, egestas in nulla in, varius gravida sem. Fusce at aliquet metus, eget volutpat nibh. Suspendisse tristique, massa in tincidunt rutrum, ipsum purus condimentum diam, ac mattis nisi nibh eu mauris. Donec molestie blandit magna, in accumsan tellus pretium sit amet. In aliquam convallis porttitor. Vestibulum nec augue blandit, molestie mi dapibus, efficitur magna. Maecenas turpis lectus, tempor quis euismod sed, laoreet at nibh. Nam justo nulla, egestas sit amet magna sit amet, ornare ornare nulla. Sed lobortis ultrices dolor, non sollicitudin tellus fermentum et. Quisque arcu dui, pharetra eget risus id, venenatis pharetra dui. Vestibulum erat magna, fringilla non augue et, placerat eleifend sem. Praesent quis ullamcorper turpis, non facilisis sapien. Donec sollicitudin elit et tortor convallis rutrum. Pellentesque sollicitudin augue at erat eleifend vehicula. Aliquam vitae suscipit dui. In feugiat dui vitae consequat aliquam. Quisque vehicula ante a pulvinar porttitor. Morbi iaculis eleifend rutrum. Duis odio orci, tempor eget volutpat non, malesuada at velit. Sed lacinia diam sollicitudin, posuere enim vitae, lacinia sapien. Curabitur at nulla ut arcu semper tristique. Donec ornare sed odio non cursus. Phasellus varius nibh sit amet faucibus ornare. Fusce ac volutpat ligula. Ut sit amet accumsan augue. Suspendisse eleifend urna vel elementum sodales. Phasellus id urna sapien.",
+      "topic": "Deportes",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 25,
+      "image": "http://localhost:3000/tele.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 47,
+      "from_image": "http://localhost:3000/cnn.jpg",
+      "from_name": "CNN",
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 45,
+      "name": "#FollwMe 2017",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Tecnología",
+      "watching": 56,
+      "likes": 10,
+      "opining": 58,
+      "image": "http://localhost:3000/img-1.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 47,
+      "from_image": "http://localhost:3000/tele.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 46,
+      "name": "Bienal de Diseño",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Arte",
+      "watching": 486,
+      "likes": 0,
+      "opining": 78,
+      "image": "http://localhost:3000/bbc.jpg",
+      "live": true,
+      "hot": false,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 47,
+      "from_image": "http://localhost:3000/tele.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 47,
+      "name": "Otra cosa1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Arte",
+      "watching": 106,
+      "likes": 5,
+      "opining": 101,
+      "image": "http://localhost:3000/abc.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 47,
+      "from_image": "http://localhost:3000/cnn.jpg",
+      "from_name": "CNN",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    },
+    {
+      "id": 48,
+      "name": "Welcome to Chuzz",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Arte",
+      "watching": 106,
+      "likes": 5,
+      "opining": 101,
+      "image": "http://localhost:3000/abc.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 47,
+      "from_image": "http://localhost:3000/cnn.jpg",
+      "from_name": "Chuzz",
+      "from_id": 4,
+      "time": "2017-09-23T14:44:25"
+    }
+  ],
+  "chuzz-questions": [
+    {
+      "id": 1,
+      "chuzz_id": 1,
+      "text": "¿Qué opinas del aumento de la gasolina?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Estoy de acuerdo",
+          "image": "http://localhost:3000/img_tecnologia.jpg"
+        },
+        {
+          "id": 2,
+          "text": "Era necesario",
+          "image": "http://localhost:3000/img_ciencias.jpg"
+        },
+        {
+          "id": 3,
+          "text": "Me da igual",
+          "image": "http://localhost:3000/img_fotografia.jpg"
+        },
+        {
+          "id": 4,
+          "text": "No es justo",
+          "image": "http://localhost:3000/img_deportes.jpg"
+        },
+        {
+          "id": 5,
+          "text": "Es un fraude",
+          "image": "http://localhost:3000/img_musica.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "chuzz_id": 2,
+      "text": "¿Qué opinas del nuevo video de Chino y Nacho?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Me encanta"
+        },
+        {
+          "id": 2,
+          "text": "Bonito"
+        },
+        {
+          "id": 3,
+          "text": "Normal"
+        },
+        {
+          "id": 4,
+          "text": "No me gusta"
+        },
+        {
+          "id": 5,
+          "text": "A la basura"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "chuzz_id": 1,
+      "text": "¿Cómo te enteraste de Chuzz?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Ya se sabia"
+        },
+        {
+          "id": 2,
+          "text": "Era probable"
+        },
+        {
+          "id": 3,
+          "text": "No me lo esperaba"
+        },
+        {
+          "id": 4,
+          "text": "Me entristecío"
+        },
+        {
+          "id": 5,
+          "text": "Quiero que regresen"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "chuzz_id": 48,
+      "text": "¿Qué opinas de la separación de Bangeline?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Directamente a través de un amigo"
+        },
+        {
+          "id": 2,
+          "text": "A través de un amigo vía red social"
+        },
+        {
+          "id": 3,
+          "text": "Noticias en los medios"
+        },
+        {
+          "id": 4,
+          "text": "Recomendación del Apps Store"
+        },
+        {
+          "id": 5,
+          "text": "A ravés de una celebridad que sigo en la red"
+        }
+      ]
+    }
+  ],
+  "chuzz-questions-results": [
+    {
+      "id": 1,
+      "chuzz_id": 1,
+      "chuzz_question_id": 1,
+      "results": [
+        {
+          "option_id": 1,
+          "votes": 548,
+          "percent": 60
+        },
+        {
+          "option_id": 2,
+          "votes": 154,
+          "percent": 30
+        },
+        {
+          "option_id": 3,
+          "votes": 10,
+          "percent": 50
+        },
+        {
+          "option_id": 4,
+          "votes": 200,
+          "percent": 25
+        },
+        {
+          "option_id": 5,
+          "votes": 48,
+          "percent": 25
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "chuzz_id": 1,
+      "chuzz_question_id": 2,
+      "results": [
+        {
+          "option_id": 1,
+          "votes": 548,
+          "percent": 60
+        },
+        {
+          "option_id": 2,
+          "votes": 154,
+          "percent": 30
+        },
+        {
+          "option_id": 3,
+          "votes": 80,
+          "percent": 50
+        },
+        {
+          "option_id": 4,
+          "votes": 200,
+          "percent": 25
+        },
+        {
+          "option_id": 5,
+          "votes": 42,
+          "percent": 10
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "chuzz_id": 1,
+      "chuzz_question_id": 3,
+      "results": [
+        {
+          "option_id": 1,
+          "votes": 10,
+          "percent": 50
+        },
+        {
+          "option_id": 2,
+          "votes": 154,
+          "percent": 25
+        },
+        {
+          "option_id": 3,
+          "votes": 0,
+          "percent": 0
+        },
+        {
+          "option_id": 4,
+          "votes": 214,
+          "percent": 95
+        },
+        {
+          "option_id": 5,
+          "votes": 0,
+          "percent": 0
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "admin_user_id": 1,
+      "name": "Equipo de softball CASA, C.A.",
+      "featured": true,
+      "alert": true,
+      "image": "http://localhost:3000/img_3.jpg",
+      "starForYou": true,
+      "alertForYou": true
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "admin_user_id": 1,
+      "name": "Fanáticos de baisbol",
+      "featured": true,
+      "alert": true,
+      "image": "http://localhost:3000/img_4.jpg",
+      "starForYou": false,
+      "alertForYou": true
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "admin_user_id": 1,
+      "name": "Elección de modelos del casting",
+      "featured": false,
+      "alert": false,
+      "image": "http://localhost:3000/img_2.jpg",
+      "starForYou": true,
+      "alertForYou": false
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "admin_user_id": 1,
+      "name": "Fanáticos de la moda",
+      "featured": false,
+      "alert": false,
+      "image": "http://localhost:3000/img_1.jpg",
+      "starForYou": false,
+      "alertForYou": false
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "name": "Mejor mascota",
+      "status": "NO_ANSWERED",
+      "group_id": 1,
+      "created_at": "2017/07/25",
+      "aswered_at": "2017/07/28",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 201,
+      "image": "http://localhost:3000/img-4.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": true,
+      "liked_by_you": true,
+      "last": 1
+    },
+    {
+      "id": 2,
+      "name": "Premios del año",
+      "status": "ANSWERED",
+      "group_id": 1,
+      "created_at": "2017/07/23",
+      "aswered_at": "2017/07/24",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo.",
+      "topic": "Noticias",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 458,
+      "image": "http://localhost:3000/img-2.jpg",
+      "live": true,
+      "hot": false,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 1
+    },
+    {
+      "id": 3,
+      "name": "Equipo campeón",
+      "status": "YOURS",
+      "group_id": 1,
+      "created_at": "2017/06/23",
+      "aswered_at": "2017/07/01",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, odio in consectetur lacinia, lorem quam posuere tortor, sit amet laoreet felis neque mattis justo. Nunc euismod tellus sed consectetur suscipit. Sed eu euismod quam. Mauris erat sapien, egestas in nulla in, varius gravida sem. Fusce at aliquet metus, eget volutpat nibh. Suspendisse tristique, massa in tincidunt rutrum, ipsum purus condimentum diam, ac mattis nisi nibh eu mauris. Donec molestie blandit magna, in accumsan tellus pretium sit amet. In aliquam convallis porttitor. Vestibulum nec augue blandit, molestie mi dapibus, efficitur magna. Maecenas turpis lectus, tempor quis euismod sed, laoreet at nibh. Nam justo nulla, egestas sit amet magna sit amet, ornare ornare nulla. Sed lobortis ultrices dolor, non sollicitudin tellus fermentum et. Quisque arcu dui, pharetra eget risus id, venenatis pharetra dui. Vestibulum erat magna, fringilla non augue et, placerat eleifend sem. Praesent quis ullamcorper turpis, non facilisis sapien. Donec sollicitudin elit et tortor convallis rutrum. Pellentesque sollicitudin augue at erat eleifend vehicula. Aliquam vitae suscipit dui. In feugiat dui vitae consequat aliquam. Quisque vehicula ante a pulvinar porttitor. Morbi iaculis eleifend rutrum. Duis odio orci, tempor eget volutpat non, malesuada at velit. Sed lacinia diam sollicitudin, posuere enim vitae, lacinia sapien. Curabitur at nulla ut arcu semper tristique. Donec ornare sed odio non cursus. Phasellus varius nibh sit amet faucibus ornare. Fusce ac volutpat ligula. Ut sit amet accumsan augue. Suspendisse eleifend urna vel elementum sodales. Phasellus id urna sapien.",
+      "topic": "Deportes",
+      "watching": 1536,
+      "likes": 523,
+      "opining": 25,
+      "image": "http://localhost:3000/img-5.jpg",
+      "live": true,
+      "hot": true,
+      "notifications": false,
+      "liked_by_you": false,
+      "last": 1
+    }
+  ],
+  "notification-count": {
+    "id": 1,
+    "user_id": 1,
+    "count": 6
+  },
+  "dummy": {
+    "code": "1234"
+  },
+  "user_answers": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 2,
+      "option_id": 3
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 2
+    },
+    {
+      "id": 4,
+      "user_id": 2,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3
+    },
+    {
+      "id": 5,
+      "user_id": 2,
+      "chuzz_id": 1,
+      "question_id": 2,
+      "option_id": 5
+    },
+    {
+      "user_id": 2,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 3,
+      "id": 6
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 7
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 2,
+      "option_id": 5,
+      "id": 8
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 2,
+      "id": 9
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 10
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3,
+      "id": 11
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 12
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 13
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3,
+      "id": 14
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 4,
+      "id": 15
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 5,
+      "id": 16
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 17
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 3,
+      "id": 18
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 2,
+      "question_id": 2,
+      "option_id": 5,
+      "id": 19
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 20
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 1,
+      "id": 21
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 22
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3,
+      "id": 23
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 24
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 25
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 26
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 27
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 28
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 29
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 30
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 31
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 32
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 33
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 34
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 35
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 36
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 37
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 38
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 39
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 40
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 41
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 42
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 1,
+      "id": 43
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 4,
+      "id": 44
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 4,
+      "id": 45
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 46
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 47
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 3,
+      "id": 48
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 49
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 4,
+      "id": 50
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 51
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 52
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 53
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3,
+      "id": 54
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3,
+      "id": 55
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 4,
+      "id": 56
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 4,
+      "id": 57
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3,
+      "id": 58
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 59
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 60
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 61
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 62
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 2,
+      "question_id": 2,
+      "option_id": 1,
+      "id": 63
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 64
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 1,
+      "id": 65
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 66
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 67
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 68
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 69
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 70
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 71
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 72
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 73
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 74
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 75
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 76
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 77
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 78
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 79
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 80
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 81
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 82
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "id": 83
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3,
+      "id": 84
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 85
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 4,
+      "id": 86
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 87
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "id": 88
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 89
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 2,
+      "id": 90
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 91
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 2,
+      "id": 92
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 93
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 94
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 95
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 3,
+      "id": 96
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 97
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 98
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 99
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 100
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 101
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 102
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 103
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 104
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 105
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 106
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 107
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 108
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 109
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 110
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 111
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 112
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 113
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 114
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 115
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 116
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 117
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 118
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 119
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 120
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 121
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 2,
+      "id": 122
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 123
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 124
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 1,
+      "option_id": 1,
+      "id": 125
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 1,
+      "question_id": 3,
+      "option_id": 2,
+      "id": 126
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 48,
+      "question_id": 4,
+      "option_id": 3,
+      "id": 127
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 48,
+      "question_id": 4,
+      "option_id": 1,
+      "id": 128
+    },
+    {
+      "user_id": 1,
+      "chuzz_id": 48,
+      "question_id": 4,
+      "option_id": 2,
+      "id": 129
+    }
+  ],
+  "settings": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "live_event": false,
+      "interest_event": true,
+      "new_group": false,
+      "received_poll": true,
+      "answered_poll": true,
+      "registered_contact": false
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "name": "Venezuela"
+    },
+    {
+      "id": 2,
+      "name": "Colombia"
+    },
+    {
+      "id": 3,
+      "name": "Peru"
+    },
+    {
+      "id": 4,
+      "name": "Ecuador"
+    },
+    {
+      "id": 5,
+      "name": "Chile"
+    },
+    {
+      "id": 6,
+      "name": "Uruguai"
+    },
+    {
+      "id": 7,
+      "name": "Paraguai"
+    },
+    {
+      "id": 8,
+      "name": "Brazil"
+    },
+    {
+      "id": 9,
+      "name": "Argentina"
+    },
+    {
+      "id": 10,
+      "name": "Mexico"
+    }
+  ],
+  "messages-systems": [
+    {
+      "id": 1,
+      "name": "SMS"
+    },
+    {
+      "id": 2,
+      "name": "Whasapp"
+    }
+  ],
+  "topics_selected": [],
+  "notifications": [
+    {
+      "id": 1,
+      "name": "Eleciones Presidenciales de Estados Unidos",
+      "message": "Lorem ipsum dolor sit amet.",
+      "image": "http://localhost:3000/img-4.jpg",
+      "time": "2017-09-23T16:16:25",
+      "type": "poll"
+    },
+    {
+      "id": 1,
+      "name": "Miss Venezuela 2017",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "http://localhost:3000/img-2.jpg",
+      "time": "2017-09-23T14:44:25",
+      "type": "group"
+    },
+    {
+      "id": 3,
+      "name": "Final mundial 2017 Argentina vs Alemania",
+      "message": "Integer pellentesque",
+      "image": "http://localhost:3000/img-5.jpg",
+      "time": "2017-09-23T14:44:25",
+      "type": "profile"
+    }
+  ],
+  "chuzz-welcome": {
+    "welcome_id": 48
+  }
+}

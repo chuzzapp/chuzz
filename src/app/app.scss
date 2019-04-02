@@ -1,0 +1,188 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.gfdææ
+
+$item-ios-avatar-border-radius:          50% !default;
+$item-md-avatar-border-radius:           50% !default;
+$item-wp-avatar-border-radius:           50% !default;
+
+ion-header .toolbar-background {
+    background-color: #000042;
+}
+
+ion-header .toolbar-title {
+    color: #fff;
+    font-weight: 300;
+}
+
+ion-card-title {
+    color: color($colors, chuzz-secondary) !important;
+}
+
+.card-content-md, .card-content-ios, .card-content-wp {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+.nav-wrapper button {
+        position: absolute;
+        top: 10px;
+        color: white;
+        z-index: 1;
+        background-color: transparent;
+}
+
+.nav-wrapper button.close {
+    left: 10px; 
+}
+
+.nav-wrapper button.edit, .nav-wrapper button.more {
+    right: 10px; 
+}
+
+.nav-wrapper ion-title {
+    margin-left: 50px;
+}
+
+.empty-screen-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 45px;
+
+    img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-family: 'Baloo Tamma', sans-serif;
+        font-weight: 500;
+        font-size: 1.7em;
+        color: #7e7ea4;
+    }
+
+    p {
+        font-size: 1.1em;
+        color: #B2B2B2;
+        font-weight: 100;
+    }
+
+}
+
+.toast-message {
+  white-space: pre;
+}
+
+.toast-md .toast-wrapper, .toast-ios .toast-wrapper, .toast-wp .toast-wrapper {
+  background-color: darkred;      
+}
+
+.empty-item, .empty-item .item-inner {
+    min-height: 0;
+    height: 0;
+}
+
+.toggle-text {
+    font-size: 0.95em;
+}
+.toggle-text span {
+    font-size: 0.6em;
+    color: grey;
+}
+
+.members-count {
+    font-size: 0.8em;
+    color: grey;
+}
+
+.member-list ion-col p {
+    font-size: 0.5em;
+    color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.add-remove-member-badge {
+    right: 0;
+    bottom: 15px;
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.add-remove-member-badge ion-icon {
+    font-size: 0.8em;
+}
+
+.add-remove-member-badge.list {
+    right: initial;
+    left: 52px;
+    bottom: 6px;
+    background-color: color($colors, chuzz-default);
+}
+
+.item-md .member-list text-avatar, .item-md .member-list text-avatar::after,
+.item-ios .member-list text-avatar, .item-ios .member-list text-avatar::after,
+.item-wp .member-list text-avatar, .item-wp .member-list text-avatar::after {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.no-scroll .scroll-content{
+     overflow: auto;
+}
+
+.toggle-md.toggle-checked .toggle-icon {
+    background-color: #c8dcff !important;
+}
+
+.poll-card-image-wrapper {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100%;
+
+    ion-badge {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.fixed-end {
+    position: fixed;
+    bottom: 16px;
+    width: calc(100% - 40px);
+    z-index: 98;
+}
+
+.platform-ios {
+    textarea {
+        text-indent: -3px;
+    }
+}
+
+.button-md {
+    text-transform: none;
+}

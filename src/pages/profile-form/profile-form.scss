@@ -1,0 +1,36 @@
+page-profile-form {
+    ion-label {
+        font-size: 0.8em;
+    }
+
+    ion-title {
+      text-transform: capitalize;
+    }
+
+    .profile-menu-image {
+        border-radius: 100%;
+        margin-top: 25px;
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+    }
+
+    .footer-md::before {
+        background-image: none; 
+    }
+
+    .error {
+        padding-left: 16px;
+        font-size: 0.9em;
+        color: red;
+    }
+
+    agreement-text {
+        p {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}

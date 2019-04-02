@@ -1,0 +1,64 @@
+<ion-header>
+
+  <ion-navbar class="nav-wrapper">
+
+    <button class="close" start ion-button icon-only clear (click)="dismiss(true)">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
+    <ion-title>{{ 'GROUP_ADD_PERSON' | translate }}</ion-title>
+
+    <!-- <button ion-button icon-only class="edit" color="grey" (click)="toggleSearchBar()">
+      <ion-icon name="search"></ion-icon>
+    </button> -->
+
+    <!--<ion-searchbar [animated]="true" [placeholder]="searchText" >
+    </ion-searchbar>-->
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding padding-top padding-bottom class="no-scroll">
+  <ion-searchbar #search [(ngModel)]="searchKeyword" [debounce]="500" (ionInput)="searchBarOnInput($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item>
+      <p *ngIf="contactsSelected.length == 0">{{ 'ADD_MEMBER_NO_MEMBER' | translate }}</p>
+      <ion-grid class="member-list" *ngIf="contactsSelected.length > 0">
+        <ion-row>
+          <ion-col col-2 col-md-1 *ngFor="let member of contactsSelected, let x = index">
+            <text-avatar [text]="member.display_name" [color]="chuzz-less" item-left (click)="removeContact(x)"></text-avatar>
+            <ion-badge class="add-remove-member-badge">
+              <ion-icon name="close"></ion-icon>
+            </ion-badge>
+            <p>{{ member.display_name }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-label class="toggle-text">
+        {{ 'ADD_MEMBER_ALL_CONTACTS' | translate }}<br>
+        <span>{{ 'ADD_MEMBER_ALL_CONTACTS_MSG' | translate }}</span>
+      </ion-label>
+      <ion-toggle color="chuzz-default"></ion-toggle>
+    </ion-item> -->
+
+    <ion-item>
+      <ion-list no-padding>
+        <button ion-item *ngFor="let contact of contactlist, let i = index" (click)="contact.added >= 0? '' : addContact(i)">
+          <text-avatar [text]="contact.display_name" [color]="chuzz-less" item-left>
+            <ion-badge class="add-remove-member-badge list" *ngIf="contact.added >= 0"><ion-icon name="checkmark"></ion-icon></ion-badge>
+          </text-avatar>
+          <h2>{{ contact.display_name }}</h2>
+          <p>{{ contact.username }}</p>
+        </button>
+      </ion-list>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom>
+    <button ion-fab color="chuzz-secondary" (click)="dismiss(false)"><ion-icon name="checkmark"></ion-icon></button>
+  </ion-fab>
+
+</ion-content>

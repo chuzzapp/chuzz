@@ -1,0 +1,27 @@
+<ion-navbar>
+  <button start ion-button icon-only menu menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+  <ion-title>
+    <img src="assets/img/logos/img-isotype-main.png" />
+    <span>{{ 'CHUZZ-MAIN-TITLE' | translate }}</span>
+  </ion-title>
+
+  <ion-buttons end *ngIf="showSearchButton">
+    <button ion-button icon-only (click)="addItem()">
+      <ion-icon name="search"></ion-icon>
+    </button>
+  </ion-buttons>
+    <ion-buttons end *ngIf="showShareButton">
+    <button ion-button icon-only (click)="shareButtonClicked()">
+      <ion-icon name="share" ios="ios-share-outline"></ion-icon>
+    </button>
+  </ion-buttons>
+  
+  <ion-buttons end *ngIf="showAddButton">
+    <button ion-button icon-only (click)="addButton()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>

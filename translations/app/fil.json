@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Maaari kang ma-intered sa bagong survey na ito - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Ang bagong survey na %2$@ ay ginawa kamakailan ng %1$@ Maaari mong sagutin ngayon",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Nakatanggap ka ng bagong sagot mula sa %1$@"
+    }
+}

@@ -1,0 +1,37 @@
+poll-card-list {
+
+    
+  @import '../../assets/styles/chuzz-grid';
+    
+  .card-md p, .card-ios p, .card-wp p {
+      font-size: 1.0rem;
+  }
+  .card-md p span, .card-ios p span, .card-wp p span {
+      font-weight: bold;
+  }
+
+  .hidden-cards {
+    opacity: 0.0;
+  }
+
+  .show-cards {
+    opacity: 1.0;
+    transition: opacity 1s;
+  }
+
+  .poll-list {
+    padding-left: 10px;
+  }
+
+  .poll-card-red-dot {
+    background-color: #FA001C;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+}
+
+    
+}

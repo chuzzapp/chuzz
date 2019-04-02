@@ -1,0 +1,34 @@
+page-chuzz-message {
+
+    ion-content {
+        background-color: color($colors, chuzz-default) !important;
+        position: relative;
+        background-image: url(../assets/img/backgrounds/img-background.png);
+        background-size: cover;
+        padding: 0 !important;
+    }
+
+    .scroll-content {
+        padding: 0 !important;
+    }
+
+    .chuzz-message {
+        position: absolute;
+        top: calc(50% - 155px);
+        min-width: 100%;
+        text-align: center;
+
+        img {
+            width: 150px;
+            margin-bottom: 25px;
+        }
+
+        span {
+            color: white;
+            font-family: 'Baloo Tamma', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Za a iya raba ku cikin sabon binciken - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Wannan sabon bincike %2$@ an yi kwanan nan ta %1$@ Za ka iya amsa yanzu",
+        "NOTIFICATION_NEW_ANSWER_BODY": "An sami sabon amsa daga %1$@"
+    }
+}

@@ -1,0 +1,175 @@
+<ion-header>
+
+  <div class="user-img-wrapper">
+    <div  class="user-img" [style.background-image]="'url(' + (user.image || profilePlaceholderImage) + ')'"></div>
+  </div>
+
+  <div class="nav-wrapper" *ngIf="user" [style.background-image]="'url(' + (user.image || profilePlaceholderImage ) + ')'">
+    <button class="close" ion-button icon-only clear (click)="dismiss()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
+    <div class="chuzz-title">
+      {{ user.display_name }}
+      <span>{{ user.username }}</span>
+    </div>
+
+    <div class="follow-botton-wrapper" *ngIf="celebrity">
+      <button ion-button text-capitalize class="follow-botton" [class.following]="following" (click)="followCelebrity()">{{ followBottontext }}</button>
+    </div>
+
+    <button class="more" ion-button icon-only clear (click)="edit()" *ngIf="!extUserId">
+      <ion-icon name="md-create"></ion-icon>
+    </button>
+  </div>
+
+
+</ion-header>
+
+
+<ion-content no-padding *ngIf="user" class="no-scroll">
+
+  <ion-grid padding padding-top padding-bottom class="stats">
+    <ion-row no-padding *ngIf="!celebrity">
+      <ion-col (click)="openAnsweredPollListPage()">
+        <span class="chuzz-stat-value">{{ user.answers_count }}</span>
+        <br>
+        <span class="chuzz-stat-title">{{ 'PROFILE_ANSWERS' | translate }}</span>
+      </ion-col>
+      <ion-col (click)="openCreatedPollListPage()" *ngIf="user.is_celebrity || user.is_admin">
+        <span class="chuzz-stat-value">{{ user.polls_count }}</span>
+        <br>
+        <span class="chuzz-stat-title">{{ 'PROFILE_POLLS' | translate }}</span>
+      </ion-col>
+       
+      <!--
+      <ion-col (click)="openGroupPage()">
+        <span class="chuzz-stat-value">{{ user.groups_count }}</span><br>
+        <span class="chuzz-stat-title">{{ 'PROFILE_GROUPS' | translate }}</span>
+      </ion-col>
+      <ion-col (click)="openLikes()">
+        <span class="chuzz-stat-value">{{ user.likes_count }}</span><br>
+        <span class="chuzz-stat-title">{{ 'PROFILE_FAVORITES' | translate }}</span>
+      </ion-col>
+      -->
+
+    </ion-row>
+    <ion-row no-padding *ngIf="celebrity">
+      <ion-col (click)="profilePolls()">
+        <span class="chuzz-stat-value">{{ user.polls_count }}</span>
+        <br>
+        <span class="chuzz-stat-title">{{ 'PROFILE_POLLS' | translate }}</span>
+      </ion-col>
+      <ion-col (click)="openGroupPage()">
+        <span class="chuzz-stat-value">{{ user.followers_count }}</span>
+        <br>
+        <span class="chuzz-stat-title">{{ 'PROFILE_FOLLOWERS' | translate }}</span>
+      </ion-col>
+      <ion-col (click)="openLikes()">
+        <span class="chuzz-stat-value">{{ user.following_count }}</span>
+        <br>
+        <span class="chuzz-stat-title">{{ 'PROFILE_FOLLOWINGS' | translate }}</span>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-list *ngIf="!celebrity">
+    <ion-item text-center *ngIf="user.country">
+      {{ user.country }}
+    </ion-item>
+    <ion-item text-center *ngIf="user.email">
+      {{ user.email }}
+    </ion-item>
+    <ion-item text-center *ngIf="user.gender">
+      {{ toGenderLabel(user.gender) | translate }}
+    </ion-item>
+    <ion-item text-center *ngIf="user.phone_number">
+      {{ user.phone_number }}
+    </ion-item>
+    <ion-item text-center *ngIf="user.birthday">
+      {{ user.birthday | date:'dd/MM/yyyy'}}
+    </ion-item>
+    <ion-item text-center *ngIf="user.id">
+      {{ user.id }}
+    </ion-item>
+  </ion-list>
+  <!--
+ <ion-list>
+    <ion-item *ngFor="let x of messages">
+    <ion-avatar item-start>
+    <button ion-button color="danger" round>{{x.address}}</button>
+    </ion-avatar>
+    <h2>{{x.address}}</h2>
+    <p>{{x.body}}</p>
+    </ion-item>
+    </ion-list>
+
+-->
+
+  <!-- <ion-refresher (ionRefresh)="doRefresh($event)" *ngIf="celebrity">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngIf="listSize == 0 && celebrity" class="empty-screen-wrapper" padding-left padding-right>
+    <img [src]="emptyScreenImage" />
+    <h2>{{ empyScreenTitle }}</h2>
+    <p>{{ empyScreenText }}</p>
+  </div>
+
+  <ion-grid *ngIf="listSize > 0 && celebrity" class="chuzz-list">
+    <ion-row no-padding class="grid-{{ gridAux }}">
+      <ion-col col-6 col-md-4 col-lg-3 *ngFor="let c of chuzz" class="grid-{{ gridAux }}-item">
+        <ion-card>
+          <div class="poll-card-from-wrapper">
+            <div class="poll-card-from" (click)="openFromProfile(c.from_id)">
+              <img [src]="c.from_image" />
+              <span>{{ c.from_name }}</span>
+            </div>
+            <div class="poll-card-from-time">
+              {{ timeSince(c.time) }}
+            </div>
+          </div>
+          <div class="poll-card-image-wrapper" [style.background-image]="'url(' + c.image + ')'" (click)="openChuzz(c)">
+            <ion-badge item-end>{{ c.topic }}</ion-badge>
+          </div>
+
+          <ion-card-content>
+            <ion-card-title>
+              {{ c.name }}
+            </ion-card-title>
+            <p no-padding>
+              <span>{{ c.watching }}</span> personas viendo
+            </p>
+          </ion-card-content>
+
+          <ion-row no-padding>
+            <ion-col>
+              <button ion-button clear large icon-left icon-only float-right (click)="openChuzz(c)">
+                    <ion-icon name='send' class="defaul-icon"></ion-icon> 
+                  </button>
+              <button ion-button clear large icon-left icon-only float-right (click)="likeChuzz(c.id)">
+                    <ion-icon name='md-heart-outline' class="defaul-icon" *ngIf="!c.liked_by_you"></ion-icon>
+                    <ion-icon name='md-heart' class="heart" *ngIf="c.liked_by_you"></ion-icon>
+                  </button>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid> -->
+
+  <!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="listSize > 0 && celebrity">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll> -->
+</ion-content>
+<ion-footer>
+  <button ion-button color="chuzz-default" clear large class="bottom-button" (click)="shareButtonClicked()">
+    {{ 'SHARE' | translate }}
+  </button>
+  <button ion-button color="chuzz-default" clear large class="logout-button bottom-button" (click)="doLogout()" menuClose>{{ 'LOGOUT' | translate}}</button>
+</ion-footer>

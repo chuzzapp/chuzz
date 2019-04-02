@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'ABOUT_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="no-scroll" no-bounce>
+
+  <div class="about-wrapper">
+    <img class="about-logo" src="assets/img/logos/img-logo-main.png" />
+    <p>
+      {{ 'VERSION' | translate }} {{ currentAppVersion }}
+    </p>
+    <p>
+      {{ 'COPYRIGHT' | translate }} 2018. Chuzz Inc.
+    </p>
+  </div>
+
+  <div class="about-actions">
+    <button ion-button block clear (click)="shareButtonClicked()">
+      {{ 'SHARE' | translate}}
+    </button>
+    <button ion-button block clear (click)="openPageTerms()">
+      {{ 'ABOUT_TERMS_BUTTON_TEXT' | translate}}
+    </button>
+    <button ion-button block clear (click)="openPagePrivacy()">
+      {{ 'ABOUT_PRIVACY_BUTTON_TEXT' | translate}}
+    </button>
+  </div>
+
+</ion-content>

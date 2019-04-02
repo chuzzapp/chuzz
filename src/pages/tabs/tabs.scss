@@ -1,0 +1,86 @@
+page-tabs {
+
+    $default-chuzz-icon-width: 25px;
+    $default-chuzz-icon-padding: 6px 4px 2px;
+    $default-chuzz-icon-margin: 0px;
+    $default-chuzz-icon-opacity: 0.9;
+    $inactive-chuzz-icon-opacity: 0.3;
+
+    [icon-only] ion-icon.chuzzTab {
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+        color: grey;
+    }
+
+    .tab-badge {
+        top: initial;
+        bottom: 38%;
+        right: calc(50% - 18px) !important;
+        font-size: 0.9rem;
+        line-height: 12px;
+    }
+
+    
+    [ng-reflect-is-active="true"] {
+        opacity: $default-chuzz-icon-opacity !important;
+    }
+
+    .ion-ios-chuzzlive-outline,
+    .ion-ios-chuzzlive,.ion-md-chuzzlive,.ion-md-chuzzlive-outline {
+        content: url(../assets/img/tabs/ic_live.png);
+        width: $default-chuzz-icon-width;
+        padding: default-chuzz-icon-padding;
+        margin: $default-chuzz-icon-margin;
+        opacity: $inactive-chuzz-icon-opacity;
+    }
+
+    .ion-ios-chuzzhot-outline,
+    .ion-ios-chuzzhot,.ion-md-chuzzhot,.ion-md-chuzzhot-outline {
+        content: url(../assets/img/tabs/ic_hot.png);
+        width: $default-chuzz-icon-width;
+        padding: default-chuzz-icon-padding;
+        margin: $default-chuzz-icon-margin;
+        opacity: $inactive-chuzz-icon-opacity;
+    }
+
+    .ion-ios-chuzzanswered-outline,
+    .ion-ios-chuzzanswered,.ion-md-chuzzanswered,.ion-md-chuzzanswered-outline {
+        content: url(../assets/img/tabs/ic_answered.png);
+        width: $default-chuzz-icon-width;
+        padding: default-chuzz-icon-padding;
+        margin: $default-chuzz-icon-margin;
+        opacity: $inactive-chuzz-icon-opacity;
+    }
+
+    .ion-ios-chuzzgroups-outline,
+    .ion-ios-chuzzgroups,.ion-md-chuzzgroups,.ion-md-chuzzgroups-outline {
+        content: url(../assets/img/tabs/ic_groups.png);
+        width: $default-chuzz-icon-width;
+        padding: default-chuzz-icon-padding;
+        margin: $default-chuzz-icon-margin;
+        opacity: $inactive-chuzz-icon-opacity;
+    }
+
+    .ion-ios-chuzznotifications-outline,
+    .ion-ios-chuzznotifications,.ion-md-chuzznotifications,.ion-md-chuzznotifications-outline {
+        content: url(../assets/img/tabs/ic_notifications.png);
+        width: $default-chuzz-icon-width;
+        padding: default-chuzz-icon-padding;
+        margin: $default-chuzz-icon-margin;
+        opacity: $inactive-chuzz-icon-opacity;
+    }
+
+    .ion-ios-chuzzcelebrities-outline,
+    .ion-ios-chuzzcelebrities,.ion-md-chuzzcelebrities,.ion-md-chuzzcelebrities-outline {
+        content: url(../assets/img/tabs/ic_celebrities.png);
+        width: $default-chuzz-icon-width;
+        padding: default-chuzz-icon-padding;
+        margin: $default-chuzz-icon-margin;
+        opacity: $inactive-chuzz-icon-opacity;
+    }
+
+    .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text {
+        margin-top: 0px;
+    }
+
+}

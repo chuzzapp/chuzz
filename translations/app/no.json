@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Du kan bli innblandet i denne nye unders\u00f8kelsen - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Denne nye unders\u00f8kelsen %2$@ ble nylig laget av %1$@ Du kan svare n\u00e5",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Du har mottatt et nytt svar fra%1$@"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "\u00de\u00fa g\u00e6tir veri\u00f0 interedted \u00ed \u00feessari n\u00fdju k\u00f6nnun - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "\u00deessi n\u00fdja k\u00f6nnun %2$@ var n\u00fdlega ger\u00f0 af %1$@ \u00de\u00fa getur svara\u00f0 n\u00fana",
+        "NOTIFICATION_NEW_ANSWER_BODY": "\u00de\u00fa hefur fengi\u00f0 n\u00fdtt svar fr\u00e1 %1$@"
+    }
+}

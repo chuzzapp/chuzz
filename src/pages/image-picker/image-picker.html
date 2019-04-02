@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'IMAGE_PICKER_TITLE' | translate }}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <button ion-button (click)="chooseButtonClicked()">
+    <ion-icon name="image"></ion-icon>
+    {{ 'IMAGE_PICKER_CHOOSE_BUTTON' | translate }}
+  </button>
+  <button ion-button (click)="useButtonClicked()">
+    {{ 'IMAGE_PICKER_USE_BUTTON' | translate }}
+  </button>
+  <input #imageInput type="file" (change)="fileChanged($event)" />
+  <image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [resizeToWidth]="500"
+    format="jpg"
+    (imageCropped)="imageCropped($event)"
+  >
+  </image-cropper> 
+</ion-content>

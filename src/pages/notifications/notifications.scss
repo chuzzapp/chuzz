@@ -1,0 +1,38 @@
+page-notifications {
+    .notification-list {
+        position: relative;
+
+        .thumbnail {
+            height: 45px;
+            width: 70px;
+            background-size: cover;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            width: 80%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: darkgrey;
+        }
+
+        span.time {
+            font-size: 0.8rem;
+            color: darkgrey;
+            position: absolute;
+            top: 16px;
+            right: 40px;
+        }
+    }
+
+    button {
+        .button-inner {
+            color: grey;
+        }
+    }
+    
+}

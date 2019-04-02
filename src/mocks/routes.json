@@ -1,0 +1,35 @@
+{
+  "/user/:user_id/groups": "/groups?user_id=:user_id",
+  "/user/:user_id/notification-count": "/notification-count?user_id=:user_id",
+  "/user/:user_id/reset-notification-count": "/dummy",
+  "/user/:user_id/polls": "/polls",
+  "/user/:user_id/poll/:poll_id/questions": "/chuzz-questions?chuzz_id=:poll_id",
+  "/user/:user_id/poll/:poll_id/answers": "/user_answers?chuzz_id=:poll_id&user_id=:user_id",
+  "/user/:user_id/settings": "/settings?user_id=:user_id",
+  "/user/:user_id/settings/:setting_id": "/settings/:setting_id",
+  "/user/:user_id/send_validation_code": "/dummy",
+  "/user/:user_id/hasTopicsSelected": "/topics_selected",
+  "/user/:user_id/validate": "/dummy",
+  "/user/:user_id/follow": "/dummy",
+
+  "/signup": "/dummy",
+
+  "/group": "/dummy",
+  "/group/:group_id/users": "/users?group_id=:group_id",
+  "/group/:group_id/polls": "/polls?group_id=:group_id",
+  "/group/:group_id/poll": "/dummy",
+  "/group/:group_id/poll/:poll_id/owner": "/users/1",
+  "/group/:group_id/poll/:poll_id/questions": "/chuzz-questions?chuzz_id=:poll_id",
+  "/group/:group_id/poll/:poll_id/question/:q_id/results": "/chuzz-questions-results?chuzz_id=:poll_id&chuzz_question_id=:q_id",
+  "/group/:group_id/highlight": "/dummy",
+  "/group/:group_id/notificate": "/dummy",
+
+  "/chuzz/:chuzz_id/questions": "/chuzz-questions?chuzz_id=:chuzz_id",
+  "/chuzz/:chuzz_id/questions/:question_id/results": "/chuzz-questions-results?chuzz_id=:chuzz_id&chuzz_question_id=:question_id",
+  "/chuzz/:chuzz_id/like": "/dummy",
+  "/chuzz/:chuzz_id/users": "/users",
+  "/chuzz/:chuzz_id/user/:user_id/answers": "/user_answers?chuzz_id=:chuzz_id&user_id=:user_id",
+
+  "/base-info/countries": "/countries",
+  "/base-info/messages-systems": "/messages-systems"
+}

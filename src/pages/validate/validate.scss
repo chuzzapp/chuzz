@@ -1,0 +1,71 @@
+page-validate {
+    ion-content {
+        text-align: center;
+
+        img {
+            margin-top: 40px;
+            width: 80px;
+        }
+    }
+
+    .button-md, .button-ios, .button-wp {
+        text-transform: none;
+        color: black;
+        font-weight: 400;
+    }
+
+    .item-inner {
+        padding-right: 0 !important;
+    }
+
+    .input-wrapper {
+        width: 100%;
+        .inputField {
+            letter-spacing: 28%;
+            width: 200%;
+            left: -101%;
+            position: absolute;
+            opacity: 0;
+
+            input {
+                font-size: 3em;
+            }
+        }
+
+        p {
+            min-height: 60px;
+            font-size: 3em;
+            color: black;
+        }
+    }
+
+    .code-input.active .item-inner {
+        border-bottom: 2px solid #488aff;
+    }
+
+    ion-input.active {
+        border-bottom: 2px solid #488aff;
+    }
+
+    .code-input {
+        display: inline-block;
+        width: 25%;
+        margin-right: 3%;
+        text-align: center;
+
+        input {
+            font-size: 3em;
+            text-align: center;
+            letter-spacing: 0;
+        }
+    }
+
+    .text-input[disabled] {
+        opacity: 1 !important;
+    }
+
+    .footer-md::before {
+        background-image: none; 
+    }
+
+}

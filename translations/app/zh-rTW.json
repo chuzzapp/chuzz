@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "\u60a8\u53ef\u80fd\u6703\u53c3\u8207\u9019\u9805\u65b0\u8abf\u67e5 - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "\u9019\u500b\u65b0\u7684\u8abf\u67e5 %2$@ \u6700\u8fd1\u662f\u7531 %1$@ \u505a\u51fa\u7684\u3002\u73fe\u5728\u4f60\u53ef\u4ee5\u56de\u7b54\u4e86",
+        "NOTIFICATION_NEW_ANSWER_BODY": "\u60a8\u5df2\u6536\u5230\u4f86\u81ea %1$@ \u7684\u65b0\u7b54\u6848"
+    }
+}

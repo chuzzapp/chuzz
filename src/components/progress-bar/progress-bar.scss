@@ -1,0 +1,43 @@
+progress-bar {
+    .progress-wrapper {
+        padding-left: 60px;
+        line-height: 1.2em;
+    }
+
+    .progress-wrapper.group {
+        padding-left: 0px;
+    }
+    .progress-outer {
+        width: 80%;
+        margin: 0;
+        padding: 0px;
+        text-align: center;
+        border-radius: 20px;
+        display: inline-block;
+    }
+
+    .group .progress-outer {
+        width: 75%;
+    }
+ 
+    .progress-inner {
+        min-height: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0px;
+        border-radius: 20px;
+    }
+
+    .progress-text{
+        display: inline-block;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    .label-md, .label-ios, .label-wp {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+}

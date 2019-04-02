@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar class="nav-wrapper">
+
+    <button start ion-button icon-only clear (click)="dismiss()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
+    <ion-title>{{ 'NEW_GROUP_TITLE' | translate }}</ion-title>
+
+    <button ion-button icon-only class="edit" color="grey" (click)="addMember()">
+      <ion-icon name="person-add"></ion-icon>
+    </button>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div class="profile-menu-image" [style.background-image]="'url(' + groupObject.image + ')'" (click)="imageFrom()">
+  </div>
+
+  <ion-list no-padding>
+    <ion-item>
+      <ion-label floating>{{ 'NEW_GROUP_TITLE_INPUT' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="groupObject.name" [ngModelOptions]="{standalone: true}"></ion-input>
+    </ion-item>
+    <!-- <ion-item margin-top>
+      <ion-label class="toggle-text">
+        {{ 'NEW_GROUP_OPEN_GROUP' | translate }}<br>
+        <span>{{ 'NEW_GROUP_OPEN_GROUP_MSG' | translate }}</span>
+      </ion-label>
+      <ion-toggle color="chuzz-default" [(ngModel)]="groupObject.is_open" [ngModelOptions]="{standalone: true}"></ion-toggle>
+    </ion-item> -->
+    <ion-item>
+      <p class="members-count">{{ 'NEW_GROUP_MEMBERS' | translate }}: {{ groupObject.members.length }} {{ 'OF' | translate }} 150</p>
+      <ion-grid class="member-list">
+        <ion-row>
+          <ion-col col-2 col-md-1 *ngFor="let member of groupObject.members, let i = index">
+            <text-avatar [text]="member.display_name" [color]="chuzz-less" item-left (click)="removeMember(i)"></text-avatar>
+            <ion-badge class="add-remove-member-badge">
+              <ion-icon name="close"></ion-icon>
+            </ion-badge>
+            <p>{{ member.display_name }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom>
+    <button ion-fab mini color="chuzz-secondary" (click)="saveGroup()"><ion-icon name="checkmark"></ion-icon></button>
+  </ion-fab>
+
+</ion-content>

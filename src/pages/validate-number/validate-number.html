@@ -1,0 +1,19 @@
+<ion-content padding>
+  <div class="image-wrapper">
+    <img src="assets/img/logos/img-logo-secondary.png">
+  </div>
+  
+  <ion-item class="input">
+    <ion-label floating>PHONE:</ion-label>
+    <ion-input type="tel" [(ngModel)]="phone"  (focusout)="inputValidation($event)" disallow-spaces></ion-input>
+  </ion-item>
+ 
+  <p class="error" *ngIf="invalidInput">ERROR</p>
+
+  <div class="botonera">
+    
+    <button ion-button block round color="chuzz-default" padding [disabled]="alreadySubmitted" (click)="doLogin()"><span>{{ 'LOGIN' | translate }}</span></button>
+  
+    
+  </div>
+</ion-content>

@@ -1,0 +1,170 @@
+poll-choice {
+
+    .button-clear-md, .button-clear-ios, .button-clear-wp {
+        color: white;
+    }
+
+    .group .button-clear-md, .group .button-clear-ios, .group .button-clear-wp {
+        color: black;
+    }
+
+    .chuzz-radio {
+        min-width: 19px;
+        min-height: 19px;
+        border-radius: 50%;
+        border-color: white;
+        border-width: 0.15em;
+        margin-right: 20px;
+        border-style: solid;
+
+    }
+
+    .chuzz-radio.text_only {
+        position: absolute;
+        top: 0px;
+    }
+
+    .chuzz-radio.active {
+        border-width: 0px;
+    }
+
+    .chuzz-radio.single {
+        border-color: darkgrey;
+        min-width: 20px;
+        min-height: 20px;
+        border-width: 2px;
+    }
+
+    .chuzz-radio.active.single, .chuzz-radio.active.with_image {
+        background-color: color($colors, chuzz-secondary);
+        border-width: 0px;
+    }
+
+    .group .button-md, .group .button-ios, .group .button-wp {
+        font-size: 0.65em;
+        text-transform: none;
+        font-weight: 400;
+        padding-left: 4px;
+    }
+
+    .question-item {
+        position: relative;
+    }
+    .question-item img.hand {
+        position: absolute;
+        width: 48px;
+        top: 10px;
+        left: 1px;
+        display: none;
+    }
+    .question-item img.hand.active {
+        display: block;
+    }
+    .result-image {
+        position: absolute;
+        width: 48px;
+        top: 0px;
+        left: 0px;
+    }
+    .image-overlay {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .chuzz-radio-result {
+        min-height: 40px;
+        width: 100%;
+    }
+
+    .group .chuzz-radio-result {
+        min-height: 20px;
+    }
+
+    .result-with-image {
+        .chuzz-radio-result {
+            .progress-wrapper {
+                padding-left: 60px;
+            }
+        }
+    }
+
+    .chuzz-choice .button-inner{
+        justify-content:flex-start;
+    }
+
+    .chuzz-choice {
+        height: auto;
+        contain: content;
+        padding-left: 20px !important;
+    }
+
+    .no-margin {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .button-md, .button-ios, .button-wp {
+        margin-bottom: 0;
+    }
+
+    .result-votes {
+        font-size: 0.65em;
+        margin-left: 10px;
+        text-transform: lowercase;
+    }
+
+
+    ion-card {
+        position: relative;
+        border-radius: 6px !important;
+    }
+
+    .card-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .card-overlay.active, .image-overlay.active {
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: url(../assets/img/logos/img-isotype-main.png);
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .chuzz-radio-text.with_image {
+        font-size: 1rem;
+        margin-left: 5px;
+        margin-top: 0;
+    }
+
+    .chuzz-radio-text {
+        width: calc(100% - 39px);
+        white-space: normal;
+        text-align: left;
+        margin-left: 39px;
+        margin-top: 2px;
+        line-height: 1.7rem;
+    }
+
+    .chuzz-radio.with_image {
+        min-width: 14px;
+        min-height: 14px;
+        margin-right: 5px;
+    }
+
+    .card-md, .car-ios {
+        width: calc(100% - 10px);
+    }
+
+    .active-result-image {
+        top: 0!important;
+    }
+
+}

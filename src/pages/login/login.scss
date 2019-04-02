@@ -1,0 +1,71 @@
+page-login {
+    .image-wrapper {
+        width: 110px;
+        margin: 20px auto 0;
+        text-align: center;
+        color: white;
+
+    }
+
+    .input {
+        font-size: 0.9em;
+    }
+
+    .botonera {
+        margin-top: 60px;
+        
+        button {
+            padding: 27px !important;
+            border-radius: 3.6rem;
+        }
+
+        button.instagram-login {
+          background: #CD486B;
+          span {
+            margin-left: -1rem;
+            padding-left: 3rem;
+            background: #CD486B url("../assets/img/instagram-icon.png") no-repeat;
+            background-size: 1.8rem;
+            line-height: 1.8rem;
+          }
+        }
+
+        button.facebook-login {
+          background: #3b5998;
+          span {
+            margin-left: -1rem;
+            padding-left: 3rem;
+            background: #3b5998 url("../assets/img/facebook-icon.png") no-repeat;
+            background-size: 1.8rem;
+            line-height: 1.8rem;
+          }
+        }
+        button.google-login {
+          background: #CBCBCB;
+          span {
+            margin-left: -1.5rem;
+            padding-left: 3rem;
+            background: #CBCBCB url("../assets/img/google_icon.png") no-repeat;
+            background-size: 1.8rem;
+            line-height: 1.8rem;
+          }
+        }
+
+        button.twitter-login {
+          background: #1da1f2;
+          span {
+            margin-left: -1rem;
+            padding-left: 3rem;
+            background: #1da1f2 url("../assets/img/twitter-icon.png") no-repeat;
+            background-size: 1.8rem;
+            line-height: 1.8rem;
+          }
+        }
+    }
+
+    .error {
+        padding-left: 16px;
+        font-size: 0.9em;
+        color: red;
+    }
+}

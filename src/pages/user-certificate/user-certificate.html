@@ -1,0 +1,38 @@
+<ion-content padding>
+
+  <img class="certificate-logo-image" src="assets/img/logos/img-isotype-main.png">
+
+  <div class="block-wrapper">
+    <p class="text-block">
+      {{ 'CERTIFICATE_TEXT_BLOCK_1' | translate }}
+    </p>
+
+    <p class="user-block" *ngIf="user">
+      @{{ user.username }}
+    </p>
+
+    <p class="text-block">
+      {{ 'CERTIFICATE_TEXT_BLOCK_2' | translate }}
+    </p>
+    
+    <p class="text-block" *ngIf="user && !user.is_celebrity">
+      {{ 'CERTIFICATE_TEXT_BLOCK_3' | translate }}
+    </p>
+    
+    <p class="text-block" *ngIf="user && user.is_celebrity">
+      {{ 'CERTIFICATE_TEXT_BLOCK_5' | translate }}
+    </p>
+
+    <p class="text-block">
+      {{ 'CERTIFICATE_TEXT_BLOCK_4' | translate }}
+    </p>
+  </div>
+
+  <div class="botton-wrapper">
+    <!--
+    <button ion-button block round text-capitalize color="chuzz-default" (click)="share()">{{ 'CERTIFICATE_SHARE_BUTTON' | translate }}</button>
+    -->
+    <button ion-button clear text-capitalize color="chuzz-default" (click)="jump()">{{ 'NEXT' | translate }}</button>
+  </div>
+
+</ion-content>

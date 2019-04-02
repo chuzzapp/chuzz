@@ -1,0 +1,35 @@
+image-picker {
+  ion-label {
+      font-size: 0.8em;
+  }
+
+  ion-title {
+    text-transform: capitalize;
+  }
+
+  input {
+    display: none;
+  }
+
+
+  image-cropper {
+    margin: auto;
+    background-color: #ccc;
+  }
+
+  button {
+    width: 100px;
+    margin: 10px;
+
+    ion-icon {
+      margin-right: 10px;
+    }
+  }
+}
+
+.modal-wrapper {
+  /*width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;*/
+}

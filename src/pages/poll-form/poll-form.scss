@@ -1,0 +1,142 @@
+page-poll-form {
+
+    .question-wrapper {
+        font-size: 0.7em;
+        color: grey;
+    }
+
+    .add-question-wrapper {
+        font-size: 0.7em;
+        color: grey;
+        position: relative;
+    }
+
+    .add-question-wrapper .line {
+        position: absolute;
+        width: 100%;
+        bottom: -10px;
+        border-top: solid 0.01rem grey;
+    }
+
+    .add-question-wrapper .text-button {
+        background-color: white;
+        position: absolute;
+        right: 0;
+        padding-left: 10px;
+    }
+
+    .add-question-wrapper .text-button span, .add-question-wrapper .text-button button {
+        display: inline-block;
+    }
+
+    .ios-add-question-button {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        line-height: 27px;
+        background-color: grey;
+        color: white;
+        text-align: center;
+        top: -4px;
+        margin: 8px;
+        position: relative;
+
+        ion-icon {
+            top: 5px;
+            left: 9px;
+            position: absolute;
+            font-size: 1.7rem;
+        }
+    }
+
+    .fab[mini] {
+        margin: 8px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .fab ion-icon {
+        font-size: 1.7rem;
+    }
+
+    .fab-md, .fab-ios, .fab-wp {
+        background-color: grey;
+    }
+
+    .option-list .form-answer-option {
+        border: solid 2px darkgrey;
+        border-radius: 50%;
+        height: 17px;
+        width: 17px;
+    }
+
+    .option-list .form-answer-option.add {
+        background-color: darkgrey;
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+    .option-list .form-answer-option, .option-list ion-label {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .option-list .item-block {
+        min-height: 3rem;
+    }
+
+    .option-list .remove-option {
+        background-color: darkred;
+        margin: 6px;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+    }
+
+    .option-list .remove-option.fab ion-icon {
+        font-size: 1.0rem;
+    }
+
+    .option-image {
+        background-size: cover;
+        min-width: 80px;
+        min-height: 80px;
+        background-color: #033636;
+        border-radius: 4px;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        margin-top: 0 !important;
+    }
+
+    .poll-image {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 200px;
+        padding-top: 100%;
+    }
+
+    ion-item.with-image {
+        align-items: end;
+        height: 120px;
+    }
+
+    ion-fab {
+        top: -20px !important;
+        right: -20px !important;
+    }
+
+    .image-close {
+        color: #000;
+        background-color: #f4f4f4;
+    }
+
+    .poll-image-close {
+        top: 20px;
+        right: 20px;
+    }
+
+}

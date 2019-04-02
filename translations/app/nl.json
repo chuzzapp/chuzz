@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Mogelijk bent u ge\u00efntereteerd in deze nieuwe enqu\u00eate - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Deze nieuwe enqu\u00eate %2$@ is onlangs gemaakt door %1$@ U kunt nu antwoorden",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Je hebt een nieuw antwoord ontvangen van %1$@"
+    }
+}

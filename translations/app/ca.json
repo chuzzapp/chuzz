@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Pot ser interedit en aquesta nova enquesta: %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Aquesta nova enquesta %2$@ ha estat feta recentment per %1$@ Ara podeu respondre",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Heu rebut una resposta nova de %1$@"
+    }
+}

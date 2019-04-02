@@ -1,0 +1,36 @@
+page-chuzz-header {
+    .toolbar-ios ion-title {
+        top: 5px;
+    }
+
+    ion-title .toolbar-title {
+
+        font-family: 'Baloo Tamma', sans-serif;
+        font-weight: 500;
+
+        span {
+            top: 5px;
+            position: relative;
+        }
+    }
+
+    ion-title img {
+        width: 25px;
+        vertical-align: middle;
+    }
+
+    ion-buttons {
+        width: 32px;
+    }
+
+    .toolbar-title {
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 1.5em !important;
+    }
+
+    .toolbar {
+        padding-top: 20px;
+        min-height: 60px;
+    }
+}

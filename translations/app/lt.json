@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "\u0160iame naujame apklausime gali b\u016bti per\u017ei\u016br\u0117ta - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "\u0160i nauja apklausa %2$@ buvo neseniai atlikta %1$@. Galite atsakyti dabar",
+        "NOTIFICATION_NEW_ANSWER_BODY": "J\u016bs gavote nauj\u0105 atsakym\u0105 i\u0161 %1$@"
+    }
+}

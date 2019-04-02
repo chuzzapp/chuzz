@@ -1,0 +1,108 @@
+<ion-header>
+  <page-chuzz-header [showSearchButton]="showSearchButton" [showShareButton]="showShareButton" *ngIf="!title"></page-chuzz-header>
+  <ion-navbar hideBackButton *ngIf="title">
+    <ion-buttons start left>
+      <button ion-button show icon-only (click)="dismiss()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      {{ title | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding class="no-scroll">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngIf="listSize == 0 && listSizeChuzzon == 0" class="empty-screen-wrapper" padding-left padding-right>
+    <img [src]="emptyScreenImage" />
+    <h2>{{ empyScreenTitle }}</h2>
+    <p>{{ empyScreenText }}</p>
+  </div>
+
+
+
+  <div class="show-cards poll-list">
+    <ion-grid>
+      <ion-row no-padding class="grid-hot">
+        <poll-card-list *ngIf="listSize > 0" [polls]="polls">
+
+          
+        </poll-card-list>
+        <ion-col col-6 col-md-4 col-lg-3 *ngFor="let c of chuzzon"  class="grid-hot-item">
+            <ion-card (click)="openChuzzonPoll(c.poll_id)">
+              <div class="poll-card-from-wrapper">
+                <div class="poll-card-from">
+                  <img [src]="c.user.image || userDefaultProfileImage"/>
+                  <span>{{ c.user.display_name }}</span>
+                  
+                </div>
+                <div class="poll-card-from-time">
+                  {{ timeSince(c.created_at) }}
+                </div>
+                
+              </div>
+              <div class="poll-card-image-wrapper"
+              [class.ended]="pollEnded"
+              [ngStyle]="(!pollEnded) && {'background-image': 'url(' + (c.poll.image || pollCardDefaultImage) + ')'}">
+                 
+            
+          </div>
+    
+              <ion-card-content>
+                  <div class="poll-card-from">
+                      <p no-padding>
+                          <span>Chuzz-on: </span>
+                        </p>
+                      <img [src]="c.chuzzonuserid.image || userDefaultProfileImage"/>
+                      <span>{{ c.chuzzonuserid.display_name }}</span>
+                    </div>
+                <ion-card-title>
+                  {{ c.description }} 
+                </ion-card-title>
+              </ion-card-content>
+    
+              <ion-row no-padding >
+                <ion-col>
+                  <button ion-button clear icon-left icon-only float-right    (click)="onPollShareClick(c)" class="button-toggle">
+                    <ion-icon ios="ios-share-alt" md="md-share-alt"></ion-icon>
+                  </button>
+                
+                </ion-col>
+              </ion-row>
+      
+            </ion-card>
+          </ion-col> 
+      </ion-row>
+    </ion-grid>
+
+  </div>
+  
+    
+
+  <!--
+    <ion-grid *ngIf="endpoint == '/celebrities' "  >
+      <ion-row no-padding class="grid-hot">
+        <ion-col  col-6 col-md-4 col-lg-3 *ngFor="let c of chuzzon" class="grid-hot-item">
+          <ion-card (click)="openChuzzonPoll(c.poll_id)">
+            <img [src]="chuzzonimage"/>
+            <div class="card-title-chuzzon">{{c.description}}</div>
+            <div class="card-subtitle-chuzzon"><ion-icon name="return-right">{{c.user.display_name}}</ion-icon></div>
+          </ion-card>
+        </ion-col>
+  
+      </ion-row>
+    </ion-grid>
+  -->
+ <!-- <ion-fab right bottom>
+    <button ion-fab color="#000042"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>-->
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="!hasReachedLastPage">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>

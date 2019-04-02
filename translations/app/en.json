@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "New poll you may be interested now on Chuzz - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "%1$@ has just posted %2$@. Let\u2019s answer now!",
+        "NOTIFICATION_NEW_ANSWER_BODY": "New answer from %1$@ received"
+    }
+}

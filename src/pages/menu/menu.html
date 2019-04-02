@@ -1,0 +1,54 @@
+<ion-nav #content [root]="rootPage"></ion-nav>
+<ion-menu id="mainMenu" type="push" enabled="false" [content]="content" (ionClose)="menuClosed()"  (ionOpen)="menuOpened()" *ngIf="user">
+
+    <ion-content class="menu-content">
+
+        <div text-center class="profile-wrapper">
+            <div class="profile-menu-image" [style.background-image]="'url(' + (user.image || profilePlaceholderImage) + ')'">
+                
+            </div>
+            <h1 class="menu-profile-name">{{ user.display_name }}</h1>
+            <p class="menu-profile-phone">{{ user.phone_number }}</p>
+            <p class="menu-profile-answers">{{ 'PROFILE_ANSWERS' | translate }} : {{ user.answers_count }}</p>
+        </div>
+        
+
+        <ion-list inset no-lines margin-top class="menu">
+            <button menuToggle ion-item (click)="openProfilePageClicked()">
+                <img float-left padding-right src="assets/img/icons/ic_profile_selected.png"/>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_PROFILE' | translate }}</h2>
+            </button>
+            <button menuToggle ion-item (click)="openSettingNotificationsPageClicked()">
+                <img float-left padding-right src="assets/img/icons/ic_notifications_selected.png"/>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_NOTIFICATIONS' | translate }}</h2>
+            </button>
+            <button menuToggle ion-item (click)="openTopicsPageClicked()">
+                <img float-left padding-right src="assets/img/icons/ic_categories_selected.png"/>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_CATEGORIES' | translate }}</h2>
+            </button>
+            <button menuToggle ion-item (click)="openAboutPageClicked()">
+                <img float-left padding-right src="assets/img/icons/ic_about_selected.png"/>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_ABOUT' | translate }}</h2>
+            </button>
+            <button menuToggle ion-item (click)="openLogros()">
+                <!--<img float-left padding-right src="assets/img/icons/ic_about_selected.png"/>-->
+                <ion-icon name="trophy" float-left padding-right></ion-icon>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_ACHIEVEMENTS' | translate }}</h2>
+            </button>
+            <button *ngIf="showPollDraftListMenu" menuToggle ion-item (click)="openDraftPollListPage()">
+                <img float-left padding-right src="assets/img/tabs/ic_answered.png"/>
+                <h2 padding-left>{{ 'POLL_LIST_DRAFT' | translate }}</h2>
+            </button>
+            <button *ngIf="showCreatePollMenu" menuToggle ion-item (click)="openAddPollPageClicked()">
+                <img float-left padding-right src="assets/img/icons/ic_questions_selected.png"/>
+                <h2 padding-left>{{ 'CREATE_POLL' | translate }}</h2>
+            </button>
+            
+<!--<button *ngIf="showCreatePollMenu" menuToggle ion-item (click)="openTutorial()">
+                <img float-left padding-right src="assets/img/icons/ic_about_selected.png"/>
+                <h2 padding-left>Tutorial</h2>
+            </button>-->
+            
+        </ion-list>
+    </ion-content>
+</ion-menu>

@@ -1,0 +1,71 @@
+<ion-header>
+
+  <ion-navbar>
+    <!--<ion-title>{{ pageTitle | translate }}</ion-title>-->
+    <ion-title>Preferences</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+    <ion-item-group>
+        <ion-item-divider color="light">Notifications</ion-item-divider>
+        <ion-list *ngIf="settings" >
+            <!--
+            <ion-item>
+              <ion-label>{{ 'SETTINGS_OPTION1' | translate }}</ion-label>
+              <ion-toggle [(ngModel)]="settings.live_event" color="chuzz-default" (ionChange)="onSettingChanged()"></ion-toggle>
+            </ion-item>
+            -->
+      
+            <ion-item>
+              <ion-label>{{ 'SETTINGS_OPTION2' | translate }}</ion-label>
+              <ion-toggle [(ngModel)]="settings.is_enabled_interested_new_poll_notif" color="chuzz-default" (ionChange)="onSettingChanged()"></ion-toggle>
+            </ion-item>
+      
+            <!--
+            <ion-item>
+              <ion-label>{{ 'SETTINGS_OPTION3' | translate }}</ion-label>
+              <ion-toggle [(ngModel)]="settings.new_group" color="chuzz-default" (ionChange)="onSettingChanged()"></ion-toggle>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label>{{ 'SETTINGS_OPTION4' | translate }}</ion-label>
+              <ion-toggle [(ngModel)]="settings.received_poll" color="chuzz-default" (ionChange)="onSettingChanged()"></ion-toggle>
+            </ion-item>
+            -->
+      
+            <ion-item>
+              <ion-label>{{ 'SETTINGS_OPTION5' | translate }}</ion-label>
+              <ion-toggle [(ngModel)]="settings.is_enabled_new_answer_notif" color="chuzz-default" (ionChange)="onSettingChanged()"></ion-toggle>
+            </ion-item>
+      
+            <!--
+            <ion-item>
+              <ion-label>{{ 'SETTINGS_OPTION6' | translate }}</ion-label>
+              <ion-toggle [(ngModel)]="settings.registered_contact" color="chuzz-default" (ionChange)="onSettingChanged()"></ion-toggle>
+            </ion-item>
+            -->
+            
+            <ion-item>
+              <ion-label>{{ 'SETTINGS_OPTION7' | translate }}</ion-label>
+              <ion-toggle [(ngModel)]="settings.is_enabled_celebrity_new_poll_notif" color="chuzz-default" (ionChange)="onSettingChanged()"></ion-toggle>
+            </ion-item>
+          </ion-list>
+      </ion-item-group>
+
+      <ion-item-group>
+          <ion-item-divider color="light">Use of data</ion-item-divider>
+          <ion-list *ngIf="settings" >
+          <ion-item>
+              <ion-label>Data Saving</ion-label>
+              <ion-toggle [(ngModel)]="settings.is_data_saving" color="chuzz-default" (ionChange)="onSettingChanged()"></ion-toggle> 
+          </ion-item>
+        </ion-list>
+        </ion-item-group>
+      
+    
+   
+
+</ion-content>

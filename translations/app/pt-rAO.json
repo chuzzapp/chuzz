@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Voc\u00ea pode estar intercedente nesta nova pesquisa - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Esta nova pesquisa %2$@ foi feita recentemente por %1$@ Voc\u00ea pode responder agora",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Voc\u00ea recebeu uma nova resposta de %1$@"
+    }
+}

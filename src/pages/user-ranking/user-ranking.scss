@@ -1,0 +1,44 @@
+page-user-ranking {
+    
+.statusact{
+    background-color: green;
+    color: red;
+}
+#wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    h1{
+        color: #033636 !important;
+    }
+    h2{
+        color: #FF5722 !important;
+    }
+    
+    .banner {
+        position: relative;
+        text-align: center;
+        height: 40%;
+     }
+    .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+     }
+        
+    .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+    }
+        
+        
+
+}

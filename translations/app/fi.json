@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Saatat olla tyytyv\u00e4inen t\u00e4h\u00e4n uuteen kyselyyn - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "T\u00e4m\u00e4 uusi kysely %2$@ on \u00e4skett\u00e4in tehty %1$@ Voit vastata nyt",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Olet saanut uuden vastauksen %1$@"
+    }
+}

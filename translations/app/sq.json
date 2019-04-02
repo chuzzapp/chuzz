@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Mund t\u00eb jeni t\u00eb interesuar n\u00eb k\u00ebt\u00eb sondazh t\u00eb ri - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Ky sondazh i ri %2$@ \u00ebsht\u00eb b\u00ebr\u00eb koh\u00ebt e fundit nga %1$@ Ju mund t\u00eb p\u00ebrgjigjeni tani",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Ju keni marr\u00eb nj\u00eb p\u00ebrgjigje t\u00eb re nga %1$@"
+    }
+}

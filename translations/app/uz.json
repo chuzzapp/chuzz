@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Siz bu yangi so\\'rovda qatnasha olasiz - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Ushbu yangi so\\'rov %2$@ yaqinda %1$@ tomonidan amalga oshirildi.",
+        "NOTIFICATION_NEW_ANSWER_BODY": "%1$@ dan yangi javob oldingiz"
+    }
+}

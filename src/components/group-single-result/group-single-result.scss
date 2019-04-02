@@ -1,0 +1,47 @@
+group-single-result {
+    .question {
+        font-size: 0.85em;
+        display: inline-block;
+        white-space: initial;
+    }
+
+    .question.number {
+        vertical-align: top;
+    }
+
+    .info-wrapper {
+        position: relative;
+    }
+
+    .question-paginator {
+        font-size: 0.9em;
+        float: left;
+        width: 100%;
+
+        .button-clear-md, .button-clear-ios, .button-clear-wp {
+            color: #4c4c4c;
+        }
+
+        .button-md, .button-ios, .button-wp {
+            margin-top: 0.4rem;
+            margin-bottom: 0.9rem;
+            font-size: 0.8em;
+        }
+    }
+
+    .question-text .label-md, .question-text .label-ios, .question-text .label-wp {
+        margin-bottom: 0;
+    }
+
+    .user-select {
+        position: absolute;
+        width: 100%;
+        text-align: right;
+        top: 0;
+        right: 0;
+        
+        ion-select{
+            float: right;
+        }
+    }
+}

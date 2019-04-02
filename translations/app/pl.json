@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "W tej nowej ankiecie mo\u017cesz znale\u017a\u0107 intencj\u0119 -%1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Ta nowa ankieta %2$@ zosta\u0142a ostatnio wykonana przez %1$@ Mo\u017cesz teraz odpowiedzie\u0107",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Otrzyma\u0142e\u015b now\u0105 odpowied\u017a od %1$@"
+    }
+}

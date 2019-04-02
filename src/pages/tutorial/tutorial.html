@@ -1,0 +1,90 @@
+<ion-header no-shadow>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">Skip</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides pager="true" (ionWillChange)="onSlideChangeStart($event)">
+    <!--
+<ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image" class="slide-image" />
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    -->
+    <ion-slide>
+      <img src="assets/img/1.jpg" class="slide-image1" />
+      <h2 class="slide-title1">¡Empecemos!</h2>
+      <p>Si quieres crear tus propias encuestas y tener seguidores, ingresa en Chuzz con cualquiera de las redes
+        sociales</p>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/2.jpg" class="slide-image2" />
+      <ul>
+        <li>Presiona el menu  <ion-icon name="menu"></ion-icon> </li>
+        <li>Selecciona CATEGORIAS</li>
+        <li>Escoge los temas de tu interés</li>
+      </ul>
+      <h2 class="slide-title2">Selecciona las categorias CHUZZ de tu interés</h2>
+      <p class="slide-para2"></p>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/3.jpg" class="slide-image3" />
+      
+      <ion-row >
+        <ion-col>
+          <div>
+            <h2>Perfil</h2><br>
+            <p>Presiona perfil para acceder a tu perfil</p>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <h2>Menu</h2><br>
+            <p>Presiona el botón de Menu para abrir la barra lateral</p>
+          </div>
+            
+     
+
+        </ion-col>
+      </ion-row>
+      <h2 class="slide-title3">Selecciona Venezuela como país Activo</h2> 
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/5.jpg" class="slide-image4" />
+      <ion-row class="chuzzers">
+        <ion-col>
+          <div>
+            <h2>Buscar</h2><br>
+            <p>Presiona la lupa para buscar los CHUZZERS que quieres seguir</p>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <h2>Follow</h2><br>
+            <p>Presiona Follow para seguir y responder las encuestas de tus CHUZZERS preferidos</p>
+          </div>
+            
+     
+
+        </ion-col>
+      </ion-row>
+      <h2 class="slide-title4">Sigue a los CHUZZERS de tu preferencia</h2>
+      <p></p>
+     
+    </ion-slide>
+    <!--
+<ion-slide>
+      <img src="assets/img/5.jpg" class="slide-image5" />
+      <h2 class="slide-title">How to do polls?</h2>
+      <button ion-button icon-right large clear (click)="startApp()">
+        CONTINUE
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+    -->
+  </ion-slides>
+</ion-content>

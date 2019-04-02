@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Podes interceder nesta nova enquisa: %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Esta nova enquisa %2$@ creouse recientemente por %1$@ Pode responder agora",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Recibiches unha nova resposta de %1$@"
+    }
+}

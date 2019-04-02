@@ -1,0 +1,11 @@
+<ion-navbar class="nav-wrapper">
+  <button ion-button icon-only (click)="dismiss()" class="close">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
+  <ion-title *ngIf="group">{{ group.name }}</ion-title>
+
+  <button ion-button icon-only (click)="editGroup()" class="edit" color="grey" *ngIf="isAdmin">
+      <ion-icon name="md-create"></ion-icon>
+  </button>
+</ion-navbar>

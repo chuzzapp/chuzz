@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Unaweza kuingia ndani ya utafiti huu mpya - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Uchunguzi huu mpya %2$@ ulifanywa hivi karibuni na %1$@ Unaweza kujibu sasa",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Umepokea jibu jipya kutoka %1$@"
+    }
+}

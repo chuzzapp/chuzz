@@ -1,0 +1,17 @@
+<ion-list no-margin>
+  <button ion-item (click)="view()">
+    {{ 'VIEW' | translate}}
+  </button>
+  <!--<button ion-item (click)="delete()" class="delete" *ngIf="isAdmin">
+    {{ 'DELETE' | translate}}
+  </button>-->
+  <button ion-item (click)="delete()"  *ngIf="eliminar">
+    {{ 'DELETE' | translate}}
+  </button>
+  <button ion-item (click)="onGroupDeleteClick()"  *ngIf="salir">
+    {{ 'LEAVE_GROUP' | translate}}
+  </button>
+  <button ion-item (click)="setAdmin()" *ngIf="isAdmin && !user.is_administrator">
+    {{ 'SET_GROUP_ADMINISTRATOR' | translate}}
+  </button>
+</ion-list>

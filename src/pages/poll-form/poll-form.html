@@ -1,0 +1,119 @@
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-title *ngIf="!isUpdate">{{ 'NEW_POLL_TITLE' | translate }}</ion-title>
+    <ion-title *ngIf="isUpdate">{{ 'EDIT_POLL_TITLE' | translate }}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only class="edit" color="grey" (click)="submitPollClicked()">
+        <ion-icon name="md-send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="poll-image" [style.background-image]="'url(' + (pollImage || pollObject.image) + ')'" item-center *ngIf="(pollImage || pollObject.image)">
+    <ion-fab>
+        <button ion-fab mini class="image-close poll-image-close" (click)="removePollImageClicked()"><ion-icon name="close"></ion-icon></button>
+    </ion-fab>
+  </div>
+  <ion-list no-padding>
+    <ion-item>
+      <ion-label floating>{{ 'NEW_POLL_FORM_TITLE' | translate }}*</ion-label>
+      <ion-input type="text" [(ngModel)]="pollObject.name" [ngModelOptions]="{standalone: true}" (blur)="pollTitleOnBlur($event)"></ion-input>
+      <button ion-button icon-only clear item-right (click)="addPollImageClicked()" class="item-botton"><ion-icon name="image"></ion-icon></button>
+    </ion-item>
+    <ion-item *ngIf="userIsAdmin">
+      <ion-label floating>{{ 'NEW_POLL_FORM_DESCRIPTION' | translate }}</ion-label>
+      <ion-textarea [(ngModel)]="pollObject.description" [ngModelOptions]="{standalone: true}"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>{{ 'START_TIME' | translate }}*</ion-label>
+      <ion-datetime picker date [min]="minDate" [max]="maxDate" displayFormat="DD/MM/YYYY" [(ngModel)]="pollObject.start_time"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>{{ 'END_TIME' | translate }}*</ion-label>
+      <ion-datetime picker date [min]="minDate" [max]="maxDate" displayFormat="DD/MM/YYYY" [(ngModel)]="pollObject.end_time"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ 'ADULTS_ONLY' | translate }}</ion-label>
+      <ion-toggle color="chuzz-default" [(ngModel)]="pollObject.is_adult_only" [ngModelOptions]="{standalone: true}"></ion-toggle>
+    </ion-item>
+    <ion-item *ngIf="userIsAdmin">
+      <ion-label class="toggle-text">
+        {{'POLL_FORM_IS_LIVE' | translate }}
+      </ion-label>
+      <ion-toggle color="chuzz-default" [(ngModel)]="pollObject.is_live" [ngModelOptions]="{standalone: true}" (ionChange)="removeSelectedTopics()"></ion-toggle>
+    </ion-item>
+    <ion-item *ngIf="userIsAdmin">
+      <ion-label class="toggle-text">
+        {{'POLL_FORM_IS_FEATURED' | translate }}
+      </ion-label>
+      <ion-toggle color="chuzz-default" [(ngModel)]="pollObject.promoted" [ngModelOptions]="{standalone: true}"></ion-toggle>
+    </ion-item>
+    <ion-item *ngIf="userIsAdmin">
+      <ion-label class="toggle-text">
+        {{'POLL_FORM_IS_PUBLISHED' | translate }}
+      </ion-label>
+      <ion-toggle color="chuzz-default" [(ngModel)]="pollObject.is_published" [ngModelOptions]="{standalone: true}"></ion-toggle>
+    </ion-item>
+    <ion-item *ngIf="displayCountrySelection">
+      <ion-label floating>{{ 'PROFILE_FORM_COUNTRY' | translate }}</ion-label>
+      <ion-select *ngIf="userIsAdmin" #countrySelect [(ngModel)]="pollCountry" (click)="onCountrySelectClicked(countrySelect)" (ionChange)="countrySelectDidChange()">
+        <ion-option [value]="undefined">International</ion-option>
+        <ion-option *ngFor="let country of internationalCountryList" [value]="country.id">{{ country.name }}</ion-option>
+        <ion-option *ngFor="let country of countryList" [value]="country.id">{{ country.name }}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item *ngIf="userIsAdmin && !pollObject.is_live">
+      <ion-label floating>{{ 'TOPICS_TITLE' | translate }}</ion-label>
+      <ion-select multiple="true" [(ngModel)]="pollObject.topic_ids">
+        <ion-option *ngFor="let topic of topicList" [value]="topic.id">{{ topic.name }}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item class="empty-item"></ion-item>
+  </ion-list>
+    <div class="question-wrapper" *ngFor="let q of questions; let i = index">
+      <ion-item>
+        <ion-label floating>{{ 'NEW_POLL_FORM_QUESTION' | translate }} {{ i + 1 }}</ion-label>
+        <ion-input type="text" [(ngModel)]="q.title" [ngModelOptions]="{standalone: true}" (blur)="questionTitleOnBlur($event)"></ion-input>
+        <button ion-button icon-only clear item-right (click)="removeQuestion(i)" class="item-botton"><ion-icon name="remove"></ion-icon></button>
+      </ion-item>
+      <ion-list radio-group no-lines no-padding margin-top class="option-list">
+        <ion-item-group reorder="true" (ionItemReorder)="reorderItems($event, i)">
+
+          <ion-item *ngFor="let o of q.choices, let x = index" side="start" [class.with-image]="(o.image_data || o.image)">
+            <div class="form-answer-option" item-left></div>
+            <div class="option-image" [style.background-image]="'url(' + (o.image_data || o.image) + ')'" item-left *ngIf="(o.image_data || o.image)"> 
+                <ion-fab top right edge >
+                    <button ion-fab mini class="image-close" (click)="removeImageForOption(i, x)"><ion-icon name="close"></ion-icon></button>
+                </ion-fab>
+            </div>
+            <ion-label>{{ o.content }}</ion-label>
+            <button ion-button icon-only clear item-right (click)="imageForOption(i, x)" class="item-botton"><ion-icon name="image"></ion-icon></button>
+            <button ion-button icon-only clear item-right (click)="removeQuestionOption(i, x)" class="item-botton"><ion-icon name="close"></ion-icon></button>
+          </ion-item>
+        </ion-item-group>
+        <button ion-item (click)="addQuestionOption(i)">
+        <div class="form-answer-option add" item-left>
+          <ion-icon name="add"></ion-icon>
+        </div>
+        <ion-label>{{ 'NEW_POLL_FORM_ADD_OPTION' | translate }}</ion-label>
+      </button>
+      </ion-list>
+    </div>
+    <div class="add-question-wrapper" padding>
+      <div class="line"></div>
+      <div class="text-button">
+        <span>
+            {{ 'NEW_POLL_FORM_ADD_QUESTION' | translate }}
+            </span>
+          <button showWhen="ios" class="ios-add-question-button" (click)="addQuestion()"><ion-icon name="add"></ion-icon></button>
+          <button ion-fab mini hideWhen="ios" (click)="addQuestion()"><ion-icon name="add"></ion-icon></button>
+      </div>
+    </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Bu yeni ankete dahil olabilirsiniz - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Bu yeni anket %2$@, %1$@ taraf\u0131ndan yak\u0131n zamanda yap\u0131ld\u0131. \u015eimdi cevap verebilirsiniz",
+        "NOTIFICATION_NEW_ANSWER_BODY": "%1$@ \\'ten yeni bir yan\u0131t ald\u0131n\u0131z"
+    }
+}

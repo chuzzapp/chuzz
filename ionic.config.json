@@ -1,0 +1,8 @@
+{
+  "name": "Chuzz",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "e8641000"
+}

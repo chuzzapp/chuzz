@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "B\u1ea1n c\u00f3 th\u1ec3 b\u1ecb ch\u1eb7n l\u1ea1i trong cu\u1ed9c kh\u1ea3o s\u00e1t m\u1edbi n\u00e0y -%1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Cu\u1ed9c kh\u1ea3o s\u00e1t m\u1edbi n\u00e0y %2$@ g\u1ea7n \u0111\u00e2y \u0111\u00e3 \u0111\u01b0\u1ee3c th\u1ef1c hi\u1ec7n b\u1edfi %1$@ B\u1ea1n c\u00f3 th\u1ec3 tr\u1ea3 l\u1eddi ngay b\u00e2y gi\u1edd",
+        "NOTIFICATION_NEW_ANSWER_BODY": "B\u1ea1n \u0111\u00e3 nh\u1eadn \u0111\u01b0\u1ee3c c\u00e2u tr\u1ea3 l\u1eddi m\u1edbi t\u1eeb %1$@"
+    }
+}

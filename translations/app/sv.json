@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Det kan h\u00e4nda att du blir interaged i den h\u00e4r nya unders\u00f6kningen - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Den h\u00e4r nya unders\u00f6kningen %2$@ gjordes nyligen av %1$@ Du kan svara nu",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Du har f\u00e5tt ett nytt svar fr\u00e5n %1$@"
+    }
+}

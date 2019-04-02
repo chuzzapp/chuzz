@@ -1,0 +1,82 @@
+<!--
+  Generated template for the UserRankingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ goalsTitle }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card class="banner" *ngFor="let user of users; let i = index" [attr.data-index]="i">
+    <img [src]="user.image || profilePlaceholderImage" />
+    <div class="card-title">{{ user.display_name | uppercase }}</div>
+
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+
+          <ion-card-content *ngFor="let user of users; let i = index" [attr.data-index]="i">
+            <h4 align="center">{{ answerTitle }}</h4>
+            <h1 align="center">{{user.answers_count}}</h1>
+            <h2 *ngIf="position > 0" align="center">{{position}}°</h2>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+
+          <ion-card-content *ngFor="let usersbycb of usersby_cb; let i = index" [attr.data-index]="i">
+            <h4 align="center">{{ followersTitles }}</h4>
+            <h1 align="center">{{usersbycb.followers_count}}</h1>
+            <h2 *ngIf="position_c > 0" align="center">{{position_c}}°</h2>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+
+          <ion-card-content *ngFor="let usersbyfq of usersby_fq; let i = index" [attr.data-index]="i">
+            <h4 align="center">{{ FirstAnswerTitle }}</h4>
+            <h1 align="center" *ngIf="usersbyfq.first_answer_count >= 0">{{usersbyfq.first_answer_count}}</h1>
+            <h1 align="center" *ngIf="usersbyfq.first_answer_count < 0">0</h1>
+            <h1 align="center" *ngIf="usersbyfq.first_answer_count == null ">0</h1>
+            <h2 *ngIf="position_f > 0" align="center" >{{position_f}}°</h2>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+
+          <ion-card-content *ngFor="let usersbyr of usersby_r; let i = index" [attr.data-index]="i">
+            <h4 align="center">{{ReferralsTitles}}</h4>
+            <h1 align="center" *ngIf="usersbyr.referred_users_count >= 0">{{usersbyr.referred_users_count}}</h1>
+            <h1 align="center" *ngIf="usersbyr.referred_users_count < 0 && usersbyr.referred_users_count == 'undefined'">0</h1>
+            <h1 align="center" *ngIf="usersbyr.referred_users_count == null ">0</h1>
+            
+            <h2 *ngIf="position_r > 0" align="center">{{position_r}}°</h2>
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

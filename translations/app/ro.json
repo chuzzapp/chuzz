@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "A\u021bi putea fi implicat \u00een acest nou sondaj - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Acest sondaj nou %2$@ a fost f\u0103cut recent de %1$@ Pute\u021bi r\u0103spunde acum",
+        "NOTIFICATION_NEW_ANSWER_BODY": "A\u021bi primit un nou r\u0103spuns de la %1$@"
+    }
+}

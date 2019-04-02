@@ -1,0 +1,12 @@
+<ion-tabs #mainTabs tabsPlacement="bottom" [selectedIndex]="tabIndex" tabsLayout="icon-top">
+  <ion-tab [root]="tab2Root" tabIcon="chuzzhot" [rootParams]="hot" [tabTitle]="tab2Title" class="chuzzTab"></ion-tab>
+  <ion-tab [root]="tab1Root" tabIcon="chuzzlive" [rootParams]="live" [tabTitle]="tab1Title" class="chuzzTab"></ion-tab>
+  <ion-tab [root]="tab3Root" tabIcon="chuzzcelebrities" [rootParams]="celebrities" [tabTitle]="tab3Title" class="chuzzTab"></ion-tab>
+<!--   <ion-tab [root]="tab4Root" tabIcon="chuzzanswered" [rootParams]="{category: answered, userId: userId, onTab: true}" [tabTitle]="tab4Title" class="chuzzTab"></ion-tab>  -->
+  <ion-tab [root]="tab5Root" tabIcon="chuzzgroups" [tabTitle]="tab5Title" class="chuzzTab"></ion-tab>
+  <!--<ion-tab [root]="tab7Root" tabTitle="Chats" tabIcon="ios-contacts-outline"></ion-tab>-->
+  <!--<ion-tab [root]="tab7Root" tabTitle="Chats" tabIcon="ios-contacts-outline" tabBadge="{{ this.messageNotificationCount }}"></ion-tab>-->
+  <!--
+  <ion-tab [root]="tab5Root" tabIcon="chuzznotifications" [rootParams]="notifications" [tabTitle]="tab5Title" tabBadge="{{ notificationsCount }}" tabBadgeStyle="chuzz-secondary" class="chuzzTab" (ionSelect)="resetNotifications()"></ion-tab>
+  -->
+</ion-tabs>

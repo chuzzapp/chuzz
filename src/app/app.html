@@ -1,0 +1,34 @@
+<ion-nav #content [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+
+    <ion-content class="menu-content">
+
+        <div text-center class="profile-wrapper">
+            <img class="profile-menu-image" src="assets/img/img-5.jpg">
+            <h1 class="menu-profile-name">Evelyn Briñez</h1>
+            <p class="menu-profile-phone">+58 000 - 000 0000</p>
+        </div>
+        
+
+        <ion-list inset no-lines margin-top padding-top class="menu">
+            <ion-item>
+                <img float-left padding-right src="assets/img/icons/ic_profile_selected.png"/>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_PROFILE' | translate }}</h2>
+            </ion-item>
+            <ion-item>
+                <img float-left padding-right src="assets/img/icons/ic_notifications_selected.png"/>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_NOTIFICATIONS' | translate }}</h2>
+            </ion-item>
+            <button menuToggle ion-item (click)="openTopicsPage()">
+                <img float-left padding-right src="assets/img/icons/ic_categories_selected.png"/>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_CATEGORIES' | translate }}</h2>
+            </button>
+            <button menuToggle ion-item (click)="openAboutPage()">
+                <img float-left padding-right src="assets/img/icons/ic_about_selected.png"/>
+                <h2 padding-left>{{ 'MENU_ITEM_TEXT_ABOUT' | translate }}</h2>
+            </button>
+        </ion-list>
+
+        <button ion-button block color="chuzz-default" clear large class="menu-exit-button">Salir</button>
+    </ion-content>
+</ion-menu>

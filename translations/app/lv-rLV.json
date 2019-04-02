@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "\u0160aj\u0101 jaunaj\u0101 aptauj\u0101 jums var\u0113tu b\u016bt interv\u0113ti -%1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "\u0160o jauno apsekojumu %2$@ nesen veicis %1$@. Tagad varat atbild\u0113t",
+        "NOTIFICATION_NEW_ANSWER_BODY": "J\u016bs sa\u0146\u0113m\u0101t jaunu atbildi no %1$@"
+    }
+}

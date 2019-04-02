@@ -1,0 +1,35 @@
+<ion-header>
+
+  <group-header [group]="currentGroup" [isAdmin]="isAdmin"></group-header>
+
+</ion-header>
+
+
+<ion-content padding class="no-scroll">
+
+  <div *ngIf="listSize == 0" class="empty-screen-wrapper" padding-left padding-right>
+    <img [src]="emptyScreenImage" />
+    <h2>{{ empyScreenTitle }}</h2>
+    <p>{{ empyScreenText }}</p>
+  </div>
+
+  <ion-list *ngIf="listSize > 0">
+
+    <ion-item *ngFor="let member of groupMembers">
+        <ion-avatar item-start> 
+          <img [src]="member.image || 'assets/img/profile_placeholder.png'" />
+        </ion-avatar>
+        <h2>{{ member.display_name }}</h2>
+        <ion-badge item-end *ngIf="member.is_administrator">{{ 'ADMIN_GROUP_TEXT' | translate }}</ion-badge> 
+        <button ion-button clear item-end icon-only (click)="popOverPollOptions($event, member)">
+          <ion-icon name="more"></ion-icon>
+        </button>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-fab right bottom *ngIf="isAdmin">
+    <button ion-fab color="chuzz-secondary" (click)="addMember()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+</ion-content>

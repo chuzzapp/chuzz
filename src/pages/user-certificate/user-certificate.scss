@@ -1,0 +1,52 @@
+page-user-certificate {
+
+    text-align: center;
+
+    .certificate-logo-image {
+        width: 100px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    button {
+        border-radius: 50px !important;
+    }
+
+    .block-wrapper {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .text-title, .text-block, .user-block {
+        font-family: 'Baloo Tamma', sans-serif;
+        font-weight: 500;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .text-block {
+        color: color($colors, chuzz-default);
+        font-size: 1.5em;
+    }
+
+    .user-block {
+        color: color($colors, chuzz-red);
+        font-size: 1.8em;
+        padding-top: 0px;
+        margin-top: -10px;
+    }
+
+    .text-title {
+        color: color($colors, chuzz-default);
+        font-size: 2.9em;
+    }
+
+    .botton-wrapper {
+        position: relative;
+        bottom: -30px;
+    }
+
+    
+}

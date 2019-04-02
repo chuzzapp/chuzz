@@ -1,0 +1,32 @@
+<ion-header>
+  <page-chuzz-header></page-chuzz-header>
+</ion-header>
+
+
+<ion-content class="no-scroll">
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngIf="listSize == 0" class="empty-screen-wrapper" padding-left padding-right>
+    <img [src]="emptyScreenImage" />
+    <h2>{{ empyScreenTitle }}</h2>
+    <p>{{ empyScreenText }}</p>
+  </div>
+
+  <ion-list *ngIf="listSize > 0" class="notification-list">
+    <ion-item *ngFor="let n of notifications">
+      <div class="thumbnail" item-start [style.background-image]="'url(' + n.image + ')'" margin-right>
+      </div>
+      <h2>{{ n.name }}</h2>
+      <p>{{ n.message }}</p>
+      <span class="time" >{{ timeUtils.timeSince(n.time) }}</span>
+      <button ion-button clear item-end icon-only (click)="openNotification(n)">
+          <ion-icon name="ios-arrow-forward"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

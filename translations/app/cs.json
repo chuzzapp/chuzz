@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "V tomto nov\u00e9m pr\u016fzkumu byste mohli b\u00fdt zainteresov\u00e1ni - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Tento nov\u00fd pr\u016fzkum %2$@ byl ned\u00e1vno vytvo\u0159en u\u017eivatelem %1$@ M\u016f\u017eete odpov\u011bd\u011bt nyn\u00ed",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Obdr\u017eeli jste novou odpov\u011b\u010f od %1$@"
+    }
+}

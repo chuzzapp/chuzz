@@ -1,0 +1,25 @@
+page-group-chuzz {
+    .select-md {
+        padding-left: 0;
+    }
+
+    ion-item-divider {
+        min-height: 0px;
+    }
+
+    .question {
+        font-size: 0.85em;
+        display: inline-block;
+        white-space: initial;
+    }
+
+    .question.number {
+        vertical-align: top;
+    }
+
+    .title {
+        color: color($colors, chuzz-default);
+        font-weight: 500;
+    }
+
+}

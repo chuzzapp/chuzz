@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Anda mungkin diselubungi dalam tinjauan baru ini - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Tinjauan baru in %2$@ baru-baru ini dibuat oleh %1$@ Anda dapat menjawab sekarang",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Anda telah menerima jawapan baru dari %1$@"
+    }
+}

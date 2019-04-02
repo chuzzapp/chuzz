@@ -1,0 +1,74 @@
+<!--<ion-header>
+  <page-chuzz-header [showAddButton]="true" (added)="addGroup()"></page-chuzz-header>
+</ion-header>-->
+<ion-header>
+  <page-chuzz-header [showSearchButton]="false"></page-chuzz-header>
+</ion-header>
+
+<ion-content no-padding class="no-scroll">
+<!-->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>-->
+
+
+   <div *ngIf="listSize == 0" class="empty-screen-wrapper" padding-left padding-right>
+    <img [src]="emptyScreenImage" />
+    <h2>{{ 'GROUP_COMING_SOON_TITLE' | translate }}</h2>
+
+    <p *ngIf="metadata && !metadata.is_interested_in_group">{{ 'GROUP_COMING_SOON_TEXT' | translate }}</p>
+    <p *ngIf="metadata && metadata.is_interested_in_group">{{ 'GROUP_INTERESTED_TEXT' | translate }}</p>
+
+    <button class="interested-button" ion-button round color="chuzz-default" 
+      (click)="onInterestedButtonClicked()" *ngIf="metadata && !metadata.is_interested_in_group">
+      {{ 'GROUP_INTERESTED_TEXT' | translate }} 
+    </button>
+  </div> 
+<!--
+  <div *ngIf="listSize == 0" class="empty-screen-wrapper" padding-left padding-right>
+    <img [src]="emptyScreenImage" />
+    <h2>{{ emptyScreenTitleAux }}</h2>
+    <p>{{ emptyScreenTextAux }}</p>
+  </div>
+
+
+  <ion-grid *ngIf="listSize > 0">
+    <ion-row no-padding class="grid-group">
+      <ion-col col-6 col-md-4 col-lg-3 *ngFor="let g of groups" class="grid-group-item">
+        <ion-card>
+          <div class="poll-card-image-wrapper" [style.background-image]="'url(' +( g.image  || GroupPlaceholderImage )+ ')'" (click)="openGroupPage(g)">
+          
+          </div>
+          
+
+          <ion-card-content>
+            <ion-card-title style="padding-bottom: 7px;">
+              {{ g.name }}
+            </ion-card-title>
+          </ion-card-content>
+
+          <ion-row no-padding>
+            <ion-col>
+              <button ion-button clear icon-left icon-only float-right (click)="toggleNotification(g)" class="button-toggle">
+                <ion-icon name='ios-notifications-outline' class="defaul-icon" *ngIf="!g.alertForYou"></ion-icon>
+                <ion-icon name='notifications' class="notification" *ngIf="g.alertForYou"></ion-icon>
+              </button>
+              <button ion-button clear icon-left icon-only float-right (click)="toggleStar(g)" class="button-toggle">
+                <ion-icon name='ios-star-outline' class="defaul-icon" *ngIf="!g.starForYou"></ion-icon>
+                <ion-icon name='star' class="star" *ngIf="g.starForYou"></ion-icon>
+              </button>
+              <button ion-button clear icon-left icon-only float-right *ngIf="g.isUserAdmin" (click)="onGroupDeleteClick(g)" class="button-toggle">
+                  <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+              </button>
+            </ion-col>
+          </ion-row>
+
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  <button ion-button (click)="showbanner()">Show Banner</button>
+  <button ion-button (click)="launchInterstitial()">Show Interstitial</button>-->
+</ion-content>

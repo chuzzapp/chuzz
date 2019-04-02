@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'VALIDATE_TITLE_TEXT' | translate }}</ion-title>
+
+    <ion-buttons end>
+      <button #confirmButton ion-button icon-only (click)="doValidate()">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <img src="assets/img/logos/img-logo-secondary.png" />
+  <h3>{{ 'VALIDATE_TITLE_TEXT' | translate }}</h3>
+  <p margin-bottom>{{ 'VALIDATE_SUBTITLE_TEXT' | translate }}</p>
+  <div class="input-wrapper">
+    <ion-item class="code-input">
+      <p id="code1" #code1></p>
+    </ion-item>
+    <ion-item class="code-input">
+      <p id="code2" #code2></p>
+    </ion-item>
+    <ion-item class="code-input">
+      <p id="code3" #code3></p>
+    </ion-item>
+    <ion-item class="code-input">
+      <p id="code4" #code4></p>
+    </ion-item>
+    <ion-input class="inputField" #inputField type="tel" maxlength="4" [(ngModel)]="fullCode" (input)="inputCode($event)" (focus)="inputOnFocus($event)" (blur)="inputOnBlur($event)" autofocus></ion-input>
+  </div>
+
+  <button ion-button clear margin-top [color]="$text-color" (click)="sendCodeAgain()">{{ 'VALIDATE_TITLE_SEND_CODE_AGAIN' | translate }}</button>
+  <agreement-text></agreement-text>
+</ion-content>

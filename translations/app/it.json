@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Potresti essere interedted in questo nuovo sondaggio: %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Questo nuovo sondaggio %2$@ \u00e8 stato recentemente realizzato da %1$@ Puoi rispondere ora",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Hai ricevuto una nuova risposta da %1$@"
+    }
+}

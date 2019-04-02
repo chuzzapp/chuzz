@@ -1,0 +1,92 @@
+page-tutorial {
+  .toolbar-background {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .slide-zoom {
+    height: 100%;
+  }
+
+  .slide-title {
+    margin-top: 2.8rem;
+  }
+  .slide-title1 {
+    margin-top: -25.8rem;
+  }
+  .slide-title2 {
+    margin-top: -48.8rem;
+    color: white;
+    font-size: 15px;
+  }
+  .slide-title3 {
+    margin-top: -23.8rem;
+    color: white;
+    font-size: 15px;
+  }
+  .slide-title4 {
+    margin-top: 30.8rem;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -53.8rem;;
+    color: white;
+    margin-right: -30px;
+}
+.chuzzers {
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -58.8rem;
+    color: white;
+}
+
+.chuzzers p {
+  font-size: 12px;
+}
+
+
+  .slide-image {
+    max-height: 40%;
+    max-width: 60%;
+    margin: 36px 0;
+  }
+
+  b {
+    font-weight: 500;
+  }
+  ul {
+    color: white;
+    list-style: none;
+    color: white;
+    list-style: none;
+    margin-top: -12.8rem;
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #60646B;
+
+    b {
+      color: #000000;
+    }
+  }
+
+}

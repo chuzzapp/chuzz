@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ poll.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <span class="title">{{ 'GROUP_POLL_INFORMATION' | translate }}</span>
+  <h3>{{ answerCount }} {{ 'GROUP_POLL_ANSWERS' | translate }}</h3>
+  <span *ngIf="owner">{{ 'GROUP_POLL_SENDED_BY' | translate }}: {{ owner.name }}</span>
+  <br>
+  <span class="date" *ngIf="poll">{{ poll.created_at }}</span>
+
+  <ion-select [(ngModel)]="viewMode" [cancelText]="'CANCEL' | translate">
+    <ion-option value="1">{{ 'GROUP_POLL_OP_SUMARY' | translate }}</ion-option>
+    <ion-option value="2">{{ 'GROUP_POLL_OP_SINGLE' | translate }}</ion-option>
+  </ion-select>
+
+  <ion-item-divider margin-bottom>
+
+  </ion-item-divider>
+
+  <span class="title" padding-top margin-bottom>{{ 'GROUP_POLL_ANSWERS' | translate }}</span>
+  <ion-list no-lines *ngIf="viewMode == 1">
+    <ion-item *ngFor="let question  of questions, let i = index" no-padding>
+      <span class="question number">{{ i + 1 }}.</span>
+      <div class="question">&nbsp;{{ question.text }}</div>
+      <poll-group [choices]="question.choices" reset="false" group="true" *ngIf="question.choices">
+      </poll-group>
+    </ion-item>
+  </ion-list>
+
+  <group-single-result [questions]="questions" *ngIf="viewMode == 2 && questions"></group-single-result>
+
+</ion-content>

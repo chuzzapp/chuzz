@@ -1,0 +1,64 @@
+
+page-celebrity-list {
+  .toolbar {
+    min-height: 55px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  ion-input.search {
+    font-size: 1.8rem;
+    caret-color: #FF5722;
+    color: #FFF;
+  }
+
+  .filter-button {
+    width: 28px; 
+  }
+
+  .toolbar-content-ios {
+    margin-left: 10px;
+  }
+
+  .celebrity > h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .celebrity > p {
+    font-size: 1.3rem;
+  }
+
+  .item {
+    .button {
+      width: 20vw;
+      height: 25px;
+      border-radius: 12.5px;
+      span {
+        font-size: 0.9rem;
+        text-transform: none;
+      }
+    }
+  
+    .item-inner {
+      border: 0 !important;
+    }
+
+    .follow-button {
+      border-width:0;
+    }
+
+    .following-button {
+      border-width:2px;
+    }
+
+    min-height: 10.56vh;
+
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .item:last-child {
+    border-bottom: 1px solid #f0f0f0 !important;
+  }
+
+}

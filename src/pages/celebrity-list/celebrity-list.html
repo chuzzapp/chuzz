@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-buttons start left>
+      <button ion-button show icon-only (click)="dismiss()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+    <ion-title>
+      {{ 'CELEBRITY_LIST_TITLE' | translate }} 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding class="no-scoll">
+  <ion-searchbar
+    [(ngModel)]="searchKeyword"
+    [debounce]="500"
+    (ionInput)="searchBarOnInput($event)">
+  </ion-searchbar>
+  <ion-list *ngIf="listSize > 0">
+    <ion-item *ngFor="let celebrity of celebrities; let i = index">
+      <ion-avatar item-start> 
+        <img [src]="celebrity.image" *ngIf="celebrity.image" />
+        <img src="assets/img/icons/ic_profile.png" *ngIf="!celebrity.image" />
+      </ion-avatar>
+      <div class="celebrity">
+        <h2>{{ celebrity.display_name }}</h2>
+        <p>@{{ celebrity.username }} ({{ celebrity.followers_count }} {{ 'PROFILE_FOLLOWERS' | translate }})</p>
+      </div>
+      
+      <button ion-button class="follow-button" round color="chuzz-default" (click)="follow(i)" item-end *ngIf="!celebrity.is_followed">
+        {{ 'PROFILE_FOLLOW_BOTTON' | translate }} 
+      </button>
+      <button ion-button class="following-button" round outline color="chuzz-default" (click)="unfollow(i)" item-end *ngIf="celebrity.is_followed">
+        {{ 'PROFILE_FOLLOWING_BOTTON' | translate }} 
+      </button>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="listSize > 0">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Bu yeni t\u0259dqiqata - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Bu yeni sor\u011fu %2$@ yax\u0131n zamanda %1$@ t\u0259r\u0259find\u0259n verilmi\u015fdir. \u0130ndi cavab ver\u0259 bil\u0259rsiniz",
+        "NOTIFICATION_NEW_ANSWER_BODY": "%1$@ dan yeni cavab ald\u0131n\u0131z"
+    }
+}

@@ -1,0 +1,34 @@
+page-about {
+
+    ion-content {
+        background-color: color($colors, chuzz-default) !important;
+        position: relative
+    }
+
+    .about-wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about-wrapper img {
+        width: 135px;
+    }
+
+    .about-wrapper p {
+        color: white;
+    }
+
+    .about-actions {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 50px;
+        color: white;
+    }
+
+    .about-actions button {
+        color: white;
+    }
+
+}

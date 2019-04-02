@@ -1,0 +1,26 @@
+<div (swipe)="nextPrevQuestion($event)">
+  <div class="info-wrapper">
+    <div class="question-paginator">
+      <button ion-button clear icon-only (click)="go(true)">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button> {{ currentQuestionIndex }} {{ 'OF' | translate }} {{ totalQuestions }}
+      <button ion-button clear icon-only (click)="go(false)">
+        <ion-icon name="ios-arrow-forward"></ion-icon>
+      </button>
+    </div>
+    <div class="user-select">
+      <ion-select [(ngModel)]="currentUser" [cancelText]="'CANCEL' | translate" (ionChange)="optionSelected($event)">
+        <ion-option *ngFor="let u of users" [value]="u.id">{{ u.name }}</ion-option>
+      </ion-select>
+    </div>
+  </div>
+
+  <ion-item *ngIf="currentQuestion" no-lines class="question-text">
+    <span class="question number">{{ currentQuestionIndex }}.</span>
+    <div class="question">&nbsp;{{ currentQuestion.text }}</div>
+  </ion-item>
+
+  <poll-group [choices]="currentQuestion.choices" [reset]="false" [group]="true" [single]="true" [choice-selected]="currentQuestionAnswer">
+  </poll-group>
+
+</div>

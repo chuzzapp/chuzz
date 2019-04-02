@@ -1,0 +1,30 @@
+<ion-header>
+  
+    <ion-navbar class="nav-wrapper">
+  
+      <button class="close" start ion-button icon-only clear (click)="dismiss()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+      
+    </ion-navbar>
+  
+  </ion-header>
+
+
+<ion-content no-padding *ngIf="currentOption" (swipe)="nextPrevQuestion($event)">
+
+  <div class="image-wrapper ">
+    <div class="card-overlay" [class.active]="activate" (click)="clicked()">
+    </div>
+    <img [src]="currentOption.image" [class.active]="activate" (click)="clicked()">
+  </div>
+  
+  <button ion-button clear full padding class="chuzz-option" (click)="clicked()">
+    <div class="chuzz-radio" [class.active]="activate">
+    </div>
+    <div class="chuzz-radio-text" text-capitalize>
+      {{ currentOption.text }}
+    </div>
+  </button>
+
+</ion-content>

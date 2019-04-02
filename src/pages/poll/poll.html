@@ -1,0 +1,99 @@
+<ion-header>
+
+  <div class="origin-img-wrapper" [ngClass]="{'ended' : (pollEnded)}" *ngIf="currentPoll.user">
+    <span>{{ currentPoll.user.display_name }}</span>
+    <div class="origin-img" [style.background-image]="'url(' + (currentPoll.user.image || userDefaultProfileImage) + ')'"></div>
+  </div>
+
+  <div *ngIf="currentPoll"
+    class="nav-wrapper"
+    [class.ended]="pollEnded"
+    [ngStyle]="(!pollEnded) && {'background-image': 'url(' + (currentPoll.image || pollDefaultImage) + ')'}">
+    <button class="close" ion-button icon-only clear (click)="dismiss()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
+    <div class="chuzz-title">
+      <p>
+      {{ currentPoll.name }}
+      </p>
+    </div>
+
+    <button *ngIf="isEditable" (click)="moreButtonClicked()" button class="more" ion-button icon-only clear>
+      <ion-icon name="more"></ion-icon>
+    </button>
+  </div>
+
+</ion-header>
+
+
+<ion-content padding *ngIf="currentPoll" class="chuzz-content no-scroll">
+  <ion-grid no-padding padding-top padding-bottom>
+    <ion-row no-padding padding-top>
+      <ion-col>
+        <img class="chuzz-stat-image" src="assets/img/icons/ic_watchers.png" /><br>
+        <span class="chuzz-stat-value">{{ displayViews }}</span><br>
+        <span class="chuzz-stat-title">{{ 'CHUZZ_STAT_VIEWS_TITLE' | translate }}</span>
+      </ion-col>
+      <ion-col>
+        <img class="chuzz-stat-image" src="assets/img/icons/ic_opinions.png" /><br>
+        <span class="chuzz-stat-value">{{ displayAnswers }}</span><br>
+        <span class="chuzz-stat-title">{{ 'CHUZZ_STAT_ANSWER_TITLE' | translate }}</span>
+      </ion-col>
+      <!-- <ion-col>
+        <img class="chuzz-stat-image" src="assets/img/icons/ic_likes.png" /><br>
+        <span class="chuzz-stat-value">{{ displayLikes }}</span><br>
+        <span class="chuzz-stat-title">{{ 'CHUZZ_STAT_LIKES_TITLE' | translate }}</span>
+      </ion-col> -->
+    </ion-row>
+  </ion-grid>
+
+  <p *ngIf="!pollEnded">
+    {{ currentPoll.description }}
+  </p>
+
+  <ion-item-divider margin-bottom *ngIf="pollEnded">
+  </ion-item-divider>
+
+  <span class="title" padding-top margin-bottom *ngIf="pollEnded">{{ 'GROUP_POLL_ANSWERS' | translate }}</span>
+  <ion-list no-lines *ngIf="pollEnded">
+    <ion-item *ngFor="let question of questions, let i = index" no-padding>
+      <span class="question number">{{ i + 1 }}.</span>
+      <div class="question">&nbsp;{{ question.title }}</div>
+      <poll-group [choices]="question.choices" [show_result]="pollEnded" reset="false" group="true" *ngIf="question.choices">
+      </poll-group>
+    </ion-item>
+  </ion-list>
+
+ 
+</ion-content>
+
+<button ion-button large block round margin-left text-capitalize color="chuzz-default" (click)="answerPoll()" class="fixed-end"*ngIf="!pollEnded && showAnswerButton" >
+  {{ allAnswered ? 'Result' : 'ANSWER' | translate }}
+</button>
+<!--
+<ion-row  class="fixed-end" >
+  <ion-col>
+    <div>
+   
+    </div>
+  </ion-col>
+  <ion-col>
+    <button ion-button  large block  margin-left text-capitalize color="chuzz-default" (click)="opencomment(currentPoll)" round>
+      Comment
+    </button>
+    
+      
+    
+
+  </ion-col>
+  
+</ion-row>
+-->
+
+
+
+
+
+
+ 

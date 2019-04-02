@@ -1,0 +1,11 @@
+<ion-list no-margin>
+  <button ion-item (click)="answer()" *ngIf="poll.status == 'NO_ANSWERED'">
+    {{ 'ANSWER' | translate}}
+  </button>
+  <button ion-item (click)="view()">
+    {{ 'VIEW' | translate}}
+  </button>
+  <button ion-item (click)="delete()" class="delete" *ngIf="poll.status == 'YOURS'">
+    {{ 'DELETE' | translate}}
+  </button>
+</ion-list>

@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "\u0634\u0645\u0627 \u0645\u0645\u06a9\u0646 \u0627\u0633\u062a \u062f\u0631 \u0627\u06cc\u0646 \u0628\u0631\u0631\u0633\u06cc \u062c\u062f\u06cc\u062f - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "%1$@ has just posted %2$@. Let\u2019s answer now!",
+        "NOTIFICATION_NEW_ANSWER_BODY": "\u0634\u0645\u0627 \u06cc\u06a9 \u067e\u0627\u0633\u062e \u062c\u062f\u06cc\u062f \u0627\u0632 %1$@ \u062f\u0631\u06cc\u0627\u0641\u062a \u06a9\u0631\u062f\u0647 \u0627\u06cc\u062f"
+    }
+}

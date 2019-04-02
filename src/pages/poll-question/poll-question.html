@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar hideBackButton>
+    <ion-buttons left>
+      <button class="custom-back-button" ion-button icon-only (click)="dismiss()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end *ngIf="showSync">
+      <button ion-button icon-only (click)="getResults()">
+        <ion-icon name="sync"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content *ngIf="currentQuestion" class="poll-content no-scroll" (swipe)="nextPrevQuestion($event)">
+
+  <div class="count">
+    {{ currentQNumber }} {{ 'OF' | translate }} {{ numberOfQuestions }}
+  </div>
+  <div class="title">
+    {{ currentQuestion.title }}
+  </div>
+
+  <poll-group 
+    [choices]="currentQuestion.choices" 
+    (onChoiceSelected)="onChoiceSelected($event)" 
+    (onImageSelected)="onImageSelected($event)" 
+    (onChoiceDoubleTapped)="onChoiceDoubleTapped($event)" 
+    [results]="results[currentQNumber - 1]"
+    [choiceHighlighted]="choiceHighlighted" 
+    [reset]="reset" 
+    [choice-selected]="choiceSelectedId" 
+    [answered]="currentQuestion.answered"
+    [show_result]="currentQuestion.answered"
+    [result_with_image]="resultWithImage"
+    [in_question_page]="true"
+    >
+  </poll-group>
+
+</ion-content>
+
+<button ion-button large full color="chuzz-default" (click)="previousQuestion()" class="left-half fixed-end" *ngIf="currentQNumber > 1">
+  {{ 'PREVIOUS' | translate }}
+</button>
+<button ion-button large full color="chuzz-default" (click)="backToTab()" class="fixed-end" [ngClass]="{'right-half' : (currentQNumber > 1)}" *ngIf="currentQuestion.answered && currentQNumber >= numberOfQuestions">
+  {{ 'EXIT' | translate }}
+</button>
+<button ion-button large full color="chuzz-default" (click)="nextQuestion()" class="fixed-end" [ngClass]="{'right-half' : (currentQNumber > 1)}" *ngIf="(currentQuestion.answered || poll.is_live) && currentQNumber < numberOfQuestions">
+  {{ 'NEXT' | translate }}
+</button>
+<button ion-button large full color="chuzz-default" (click)="submit()" class="fixed-end" *ngIf="choiceSelectedId && !currentQuestion.answered">
+  {{ 'SUBMIT' | translate }}
+</button>

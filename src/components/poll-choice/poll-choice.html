@@ -1,0 +1,38 @@
+<div class="question-item" [class.group]="group" [class.result-with-image]="resultWithImage">
+
+  <ion-card #topicCard *ngIf="withImages">
+    <div class="card-overlay " [class.active]="selected && inQuestionPage" (click)="selectImage()" (doubletap)="doubleTapped($event)">
+    </div>
+    <!--<img [src]="(choice.image || choiceImagePlacholder)" (click)="selectImage()" (doubletap)="doubleTapped($event)" />-->
+    <img-loader [src]="(choice.image || choiceImagePlacholder)" useImg (click)="selectImage()" (doubletap)="doubleTapped($event)" [spinner]="true"></img-loader>
+  </ion-card>
+
+  <img 
+    [src]="resultWithImage? (choice.image || choiceImagePlacholder) : choiceImage" 
+    class="hand" [class.active-result-image]="resultWithImage" 
+    [class.active]="(selected && !withImages) || resultWithImage" 
+    *ngIf="inQuestionPage && !resultWithImage">
+  <img 
+    [src]="(choice.image || choiceImagePlacholder)" 
+    class="result-image" 
+    [class.active]="selected" 
+    *ngIf="resultWithImage">
+  <div class="image-overlay " [class.active]="selected && inQuestionPage" (click)="selectImage()" (doubletap)="doubleTapped($event)" *ngIf="resultWithImage">
+  </div>
+  <button ion-button clear block padding-bottom padding-horizontal class="chuzz-choice" [class.no-margin]="!inQuestionPage && !resultWithImage" (click)="clicked()" (doubletap)="doubleTapped($event)">
+    <div 
+      class="chuzz-radio" 
+      [class.active]="selected || resultWithImage" 
+      [class.with_image]="withImages" 
+      [class.text_only]="!withImages" 
+      [class.single]="single" 
+      *ngIf="!group || single">
+    </div>
+    <div class="chuzz-radio-text" text-capitalize [class.with_image]="withImages" [class.no-margin]="!inQuestionPage && !resultWithImage" >
+      {{ choice.content }}<span *ngIf="totalAnswers != 0 && showResult" class="result-votes">{{ choice.select_count }} {{ (choice.select_count == 1 ? 'VOTE_TEXT' : 'VOTES_TEXT') | translate }}</span>
+    </div>
+  </button>
+  <p class="chuzz-radio-result" *ngIf="!single && !withImages">
+    <progress-bar [progress]="percentage" *ngIf="showResult" [bar-color]="chuzzColor" [group]="group"></progress-bar>
+  </p>
+</div>

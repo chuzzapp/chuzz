@@ -1,0 +1,9 @@
+<div class="progress-wrapper" [class.group]="group">
+  <div class="progress-outer" [style.background-color]="barColorOuter">
+      <div class="progress-inner" [style.width]="progress + '%'" [style.background-color]="barColorComplete">
+      </div>
+  </div>
+  <div class="progress-text" [style.color]="barColorComplete">
+    {{ progress }}%
+  </div>
+</div>

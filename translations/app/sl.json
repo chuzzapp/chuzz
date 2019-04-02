@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "V tej novi raziskavi boste morda pre\u0161li - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Ta nova raziskava %2$@ je nedavno izdelala %1$@ Zdaj lahko odgovorite",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Od %1$@ ste prejeli nov odgovor"
+    }
+}

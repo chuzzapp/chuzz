@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Anda mungkin diintervensi dalam survei baru ini - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Survei baru ini %2$@ baru-baru ini dibuat oleh %1$@ Anda bisa menjawabnya sekarang",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Anda telah menerima jawaban baru dari %1$@"
+    }
+}

@@ -1,0 +1,28 @@
+<ion-content padding>
+  <div class="image-wrapper">
+    <img src="assets/img/logos/img-logo-secondary.png">
+  </div>
+  <div class="botonera">
+    <button class="instagram-login" ion-button block round color="chuzz-default" padding (click)="doLoginWithInstagram()"><span>{{ 'LOGIN_BUTTON_INSTAGRAM' | translate }}</span></button>
+    <button class="facebook-login" ion-button block round color="chuzz-default" padding (click)="doLoginWithFacebook()"><span>{{ 'LOGIN_BUTTON_FACEBOOK' | translate }}</span></button>
+    <button class="google-login" ion-button block round color="chuzz-default" padding (click)="doLoginWithGoogle()"><span>{{ 'LOGIN_BUTTON_GOOGLE' | translate }}</span></button>
+    <!-- <button class="twitter-login" ion-button block round color="chuzz-default" padding (click)="doLoginWithTwitter()"><span>{{ 'LOGIN_BUTTON_TWITTER' | translate }}</span></button> -->
+  </div>
+
+  <ion-item class="input">
+    <ion-label floating>{{ 'PROFILE_FORM_EMAIL' | translate }}</ion-label>
+    <ion-input type="email" [(ngModel)]="email" (focusout)="inputValidation($event)" disallow-spaces></ion-input>
+  </ion-item>
+  <!--<ion-item class="input">
+    <ion-label floating>{{ 'PROFILE_FORM_EMAIL' | translate }}</ion-label>
+    <ion-input type="tel" [(ngModel)]="phone" (focusout)="inputValidation($event)" disallow-spaces></ion-input>
+  </ion-item>-->
+  <p class="error" *ngIf="invalidInput">{{ 'VALIDATION_ERROR_NOT_AN_EMAIL' | translate }}</p>
+
+  <div class="botonera">
+    <!--<button ion-button block round color="chuzz-default" padding [disabled]="alreadySubmitted" (click)="doLogin()"><span>{{ 'LOGIN' | translate }}</span></button>-->
+    <button ion-button block round color="chuzz-default" padding [disabled]="alreadySubmitted" (click)="doLogin()"><span>{{ 'LOGIN' | translate }}</span></button>
+    <ion-label text-center>{{ 'OR' | translate }}</ion-label>
+    <button ion-button block clear round color="chuzz-default" padding [navPush]="signupPage"><span>{{ 'SIGNUP_BUTTON' | translate }}</span></button>
+  </div>
+</ion-content>

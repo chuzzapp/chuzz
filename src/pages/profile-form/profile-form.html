@@ -1,0 +1,78 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ title }}</ion-title>
+
+    <ion-buttons end>
+      <button #confirmButton ion-button icon-only [disabled]="alreadySubmitted" (click)="submitClicked()">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list padding-left padding-right>
+
+    <div class="profile-menu-image" [style.background-image]="'url(' + (userProfileImage || defaultImage) + ')'" (click)="imageFrom()">
+    </div>
+
+    <ion-item margin-bottom>
+      <ion-label floating>{{ 'USERNAME' | translate }}*</ion-label>
+      <ion-input type="text" autocapitalize="none" alphanumeric-only [(ngModel)]="user.username"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-label floating>{{ 'NAME' | translate }}*</ion-label>
+      <ion-input type="text" [(ngModel)]="user.display_name"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-label floating>{{ 'PROFILE_FORM_COUNTRY' | translate }}</ion-label>
+      <ion-select #countrySelect [(ngModel)]="user.country_id" (click)="onCountrySelectClicked(countrySelect)">
+        <ion-option *ngFor="let country of countries" [value]="country.id">{{ country.name }}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item margin-bottom *ngIf="!user.is_linked_to_instagram && !user.is_linked_to_google">
+      <ion-label floating>{{ 'PROFILE_FORM_EMAIL' | translate }}*</ion-label>
+      <ion-input type="email" [disabled]="emailDisabled" [(ngModel)]="user.email" (focusout)="emailValidation($event)" disallow-spaces></ion-input>
+    </ion-item>
+    <p class="error" *ngIf="invalidUserEmail">{{ 'VALIDATION_ERROR_NOT_AN_EMAIL' | translate }}</p>
+
+    <ion-item margin-bottom>
+      <ion-label floating>{{ 'PROFILE_FORM_GENDER' | translate }}</ion-label>
+      <ion-select [(ngModel)]="user.gender">
+        <ion-option value="male">{{ 'GENDER_MALE' | translate }}</ion-option>
+        <ion-option value="female">{{ 'GENDER_FEMALE' | translate }}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-label floating>{{ 'PROFILE_FORM_PHONE_NUMBER' | translate }}</ion-label>
+      <ion-input type="tel" [(ngModel)]="user.phone_number"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-label floating>{{ 'PROFILE_FORM_BIRTHDATE' | translate }}</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMM YYYY" [(ngModel)]="user.birthday" (ionChange)="birthdayOnChange(event)"></ion-datetime>
+    </ion-item>
+    <p class="error" *ngIf="invalidBirthday">{{ 'VALIDATION_ERROR_BIRTHDAY_TOO_LATE' | translate }}</p>
+
+    <ion-item margin-bottom text-wrap>
+      <ion-label>{{ 'ADULT_DECLARATION' | translate }}</ion-label>
+      <ion-checkbox [(ngModel)]="user.is_declared_adult"></ion-checkbox>
+    </ion-item>
+
+    <ion-item margin-bottom>
+        <ion-label floating>Chuzz ID</ion-label>
+        <ion-input [disabled]="true" [(ngModel)]="user.id"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <agreement-text margin-top></agreement-text>
+</ion-content>

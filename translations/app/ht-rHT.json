@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Ou ta ka interedted nan nouvo sondaj sa a - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Nouvo sondaj sa a %2$@ te f\u00e8k f\u00e8t pa %1$@ Ou ka reponn kounye a",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Ou te resevwa yon nouvo repons de %1$@"
+    }
+}

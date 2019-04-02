@@ -1,0 +1,9 @@
+page-group-detail {
+    a[aria-selected="true"] {
+        border-bottom: solid 3px white;
+    }
+
+    .tabs-md .tab-button-text {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,60 @@
+page-poll-list {
+    
+    @import '../../assets/styles/chuzz-grid';
+
+
+  .poll-card-red-dot {
+    background-color: #FA001C;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+}
+    .card-md p, .card-ios p, .card-wp p {
+        font-size: 1.0rem;
+    }
+    .card-md p span, .card-ios p span, .card-wp p span {
+        font-weight: bold;
+    }
+
+    .hidden-cards {
+      opacity: 0.0;
+    }
+
+    .show-cards {
+      opacity: 1.0;
+      transition: opacity 1s;
+    }
+
+    .poll-list {
+      padding-left: 10px;
+    }
+
+
+  .card-title-chuzzon {
+    position: absolute;
+    top: 36%;
+    font-size: 0.9em;
+  
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgb(120,120,120)
+  }
+
+  .card-subtitle-chuzzon {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+   
+    color: aliceblue;
+    background-color: rgb(112,112,112);
+  }
+  poll-card-list {
+      display: contents;
+  
+  }
+
+
+}

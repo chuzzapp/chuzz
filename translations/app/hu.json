@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Lehets\u00e9ges, hogy \u00e9rdekel ez az \u00faj felm\u00e9r\u00e9s - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Ez az \u00faj felm\u00e9r\u00e9s %2$@ nemr\u00e9giben k\u00e9sz\u00fclt %1$@ Most v\u00e1laszolhat",
+        "NOTIFICATION_NEW_ANSWER_BODY": "\u00daj v\u00e1lasz \u00e9rkezett %1$@"
+    }
+}

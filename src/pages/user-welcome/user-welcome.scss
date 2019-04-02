@@ -1,0 +1,37 @@
+page-user-welcome {
+    ion-content {
+        background-color: color($colors, chuzz-default) !important;
+        position: relative
+    }
+
+    .about-wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+        font-family: 'Baloo Tamma', sans-serif;
+        font-weight: 500;
+        color: white;
+        
+        p {
+            font-size: 1.3em;
+            line-height: 1.1em;
+        }
+    }
+
+    .about-wrapper img {
+        width: 110px;
+    }
+
+    .about-actions {
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        color: white;
+    }
+
+    .about-actions button {
+        color: white;
+    }
+
+
+}

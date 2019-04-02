@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Inkestatu berri honetan jar dezakezu: %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "%2$@ inkesta berri hau orain %1$@ -k egin du. Orain erantzun dezakezu",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Erantzun berri bat jaso duzu %1$@"
+    }
+}

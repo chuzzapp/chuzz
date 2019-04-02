@@ -1,0 +1,44 @@
+page-menu {
+    .profile-menu-image {
+        border-radius: 100%;
+        margin-top: 25px;
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+    }
+
+    .profile-wrapper {
+        border-bottom: solid 1px #cecece;
+    }
+
+    .menu-profile-name {
+        color: color($colors, chuzz-secondary);
+    }
+
+    .menu ion-item img, .menu button img {
+        width: 35px;
+    }
+
+    .menu ion-item h2, .menu button h2 {
+        color: color($colors, chuzz-default);
+        font-size: 1.0em;
+        line-height: 20px;
+    }
+
+    .menu-inner {
+        border-top: solid 20px #000042;
+        border-right: solid 5px #000042;;
+    }
+
+    .menu-content {
+        position: relative;
+    }
+
+    .menu-exit-button {
+        position: absolute;
+        bottom: 0;
+        text-transform: none;
+    }
+}

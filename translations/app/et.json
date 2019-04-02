@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Uues k\u00fcsitluses v\u00f5ite olla tuttav - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Seda uut uuringut %2$@ tegi hiljuti %1$@ Saate n\u00fc\u00fcd vastata",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Teile on saadud uus vastus alates %1$@"
+    }
+}

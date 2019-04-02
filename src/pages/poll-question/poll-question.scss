@@ -1,0 +1,68 @@
+page-poll-question {
+
+    .custom-back-button {
+        margin-left: 13px !important;
+    }
+
+    .content-md, .content-wp, .content-ios {
+        background-color: color($colors, chuzz-default);
+        position: relative;
+        color: white;
+    }
+
+    .count{
+        font-size: 1.1em;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    .title {
+        text-align: center;
+        font-family: 'Baloo Tamma', sans-serif;
+        font-weight: 500;
+        font-size: 1.7em; 
+        padding: 0 30px;
+        margin-top: 5px;
+    }
+
+    .item-ios, .item-md, .item-wp {
+        background-color: transparent;
+        color: white;
+    }
+
+    .item-ios .item-button, .item-md .item-button, .item-wp .item-button {
+        font-size: 0.9em;
+        height: 30px;
+    }
+
+    .label-md, .label-ios, .label-wp {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 70px;
+    }
+
+    .poll-content {
+        padding-right: 10px;
+    }
+
+    .poll-content > div {
+        margin-bottom: 90px !important;
+    }
+
+    .fixed-end {
+        width: 100%;
+        bottom: 40px;
+    }
+
+    .fixed-end.right-half {
+        width: 50%;
+        right: 0;
+    }
+
+    .fixed-end.left-half {
+        width: 50%;
+        left: 0;
+    }
+
+}

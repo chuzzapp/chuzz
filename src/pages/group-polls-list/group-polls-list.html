@@ -1,0 +1,29 @@
+<ion-header>
+
+  <group-header [group]="currentGroup" [isAdmin]="isAdmin"></group-header>
+
+</ion-header>
+
+
+<ion-content padding class="no-scroll">
+
+    <div *ngIf="listSize == 0" class="empty-screen-wrapper" padding-left padding-right>
+        <img [src]="emptyScreenImage"/>
+        <h2>{{ empyScreenTitle }}</h2>
+        <p>{{ empyScreenText }}</p>
+    </div>
+
+    <!--<poll-card-list *ngIf="listSize > 0" [polls]="groupPolls" ></poll-card-list>-->
+
+   
+
+  
+  
+
+
+
+  <ion-fab right bottom *ngIf="isAdmin">
+    <button ion-fab color="chuzz-secondary" (click)="addPoll()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+</ion-content>

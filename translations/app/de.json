@@ -1,0 +1,7 @@
+{
+    "app": {
+        "NOTIFICATION_NEW_INTERESTED_POLL_BODY": "Sie k\u00f6nnten in dieser neuen Umfrage interagiert werden - %1$@",
+        "NOTIFICATION_NEW_CELEBRITY_POLL_BODY": "Diese neue Umfrage %2$@ wurde k\u00fcrzlich von %1$@ durchgef\u00fchrt. Sie k\u00f6nnen jetzt antworten",
+        "NOTIFICATION_NEW_ANSWER_BODY": "Sie haben eine neue Antwort von %1$@ erhalten"
+    }
+}
