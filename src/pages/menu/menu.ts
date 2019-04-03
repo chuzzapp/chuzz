@@ -30,6 +30,7 @@ export class MenuPage {
   showCreatePollMenu: Boolean = false;
   showPollDraftListMenu: Boolean = false;
   profilePlaceholderImage = "assets/img/profile_placeholder.png";
+  platformweb: Boolean = false;
 
   constructor(
     private storage: Storage,
@@ -49,8 +50,13 @@ export class MenuPage {
         }  
       });
     });
-
+    if (this.platform.is('core') || this.platform.is('mobileweb')) {
+      this.platformweb = true;
+    } else  {
+      this.platformweb = false;
+    }
     this.platform.ready().then(() => {
+    
       // WTF: https://issues.apache.org/jira/browse/CB-12277
       this.platform.registerBackButtonAction(() => {
         // Handle modal dismiss including datepicker
