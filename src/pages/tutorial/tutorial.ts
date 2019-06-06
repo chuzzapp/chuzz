@@ -25,69 +25,64 @@ export class TutorialPage {
   slidesHeight;
   TUTO_SLIDE1_TITLE = "";
   TUTO_SLIDE2_TITLE = "";
-  TUTO_SLIDE3_TITLE = "";
+  TUTO_SLIDE3_TITLE1 = "";
+  TUTO_SLIDE3_TITLE2 = "";
+  TUTO_SLIDE3_TITLE3 = "";
   TUTO_SLIDE1_DES = "";
-  TUTO_SLIDE2_OPC = "";
-  TUTO_SLIDE2_OPC1 = "";
-  TUTO_SLIDE2_OPC2 = "";
-  TUTO_SLIDE3_MENUT = "";
-  TUTO_SLIDE3_MENUD = "";
-  TUTO_SLIDE3_PERFILT = "";
-  TUTO_SLIDE3_PERFILD = "";
+  TUTO_SLIDE2_DES = "";
+  TUTO_SLIDE3_DES1= "";
+  TUTO_SLIDE3_DES2= "";
+  TUTO_SLIDE3_DES3= "";
   TUTO_SLIDE4_TITLE = "";
-  TUTO_SLIDE4_BUSCART = "";
-  TUTO_SLIDE4_BUSCARD = "";
-  TUTO_SLIDE4_FOLLOWT = "";
-  TUTO_SLIDE4_FOLLOWD = "";
+  TUTO_SLIDE4_DES = "";
+  TUTO_SLIDE5_TITLE = "";
+  TUTO_SLIDE5_DES = "";
+  TUTO_SLIDE6_TITLE = "";
+  TUTO_SLIDE6_DES = "";
   TITLE_DELETE_POLL = "";
+  profiletitle ="";
 
   constructor(public navCtrl: NavController, public menu: MenuController, public translate: TranslateService) {
-  
+   
       this.translate.get([
-        'TUTORIAL_SLIDE1_TITLE',
-      'TUTORIAL_SLIDE1_DESCRIPTION',
-      'TUTORIAL_SLIDE2_TITLE',
-      'TUTORIAL_SLIDE2_DESCRIPTION',
-      'TUTORIAL_SLIDE3_TITLE',
-      'TUTORIAL_SLIDE3_DESCRIPTION',
-      'TUTO_SLIDE1_TITLE',
-      'TUTO_SLIDE1_DES',
-      'TUTO_SLIDE2_TITLE',
-      'TUTO_SLIDE2_OPC',
-      'TUTO_SLIDE2_OPC1',
-      'TUTO_SLIDE2_OPC2',
-      'TUTO_SLIDE3_TITLE',
-      'TUTO_SLIDE3_MENUT',
-      'TUTO_SLIDE3_MENUD',
-      'TUTO_SLIDE3_PERFILT',
-      'TUTO_SLIDE3_PERFILD',
-      'TUTO_SLIDE4_TITLE',
-      'TUTO_SLIDE4_BUSCART',
-      'TUTO_SLIDE4_BUSCARD',
-      'TUTO_SLIDE4_FOLLOWT',
-      'TUTO_SLIDE4_FOLLOWD',
-      'TITLE_DELETE_POLL',]).subscribe(values => {
+        'TUTO_SLIDE1_TITLE',
+        'TUTO_SLIDE1_DES',
+        'TUTO_SLIDE2_TITLE',
+        'TUTO_SLIDE2_DES',
+        'TUTO_SLIDE3_TITLE1',
+        'TUTO_SLIDE3_DES1',
+        'TUTO_SLIDE3_TITLE2',
+        'TUTO_SLIDE3_DES2',
+        'TUTO_SLIDE3_TITLE3',
+        'TUTO_SLIDE3_DES3',
+        'TUTO_SLIDE4_TITLE',
+        'TUTO_SLIDE4_DES',
+        'TUTO_SLIDE5_TITLE',
+        'TUTO_SLIDE5_DES',
+        'TUTO_SLIDE6_TITLE',
+        'TUTO_SLIDE3_TITLE1.0',
+        'TUTO_SLIDE6_DES',]).subscribe(values => {
         console.log('Loaded values', values);
   
   
         this.TUTO_SLIDE1_TITLE = values['TUTO_SLIDE1_TITLE'];
-        this.TUTO_SLIDE2_TITLE = values['TUTO_SLIDE2_TITLE'];
-        this.TUTO_SLIDE3_TITLE = values['TUTO_SLIDE3_TITLE'];
         this.TUTO_SLIDE1_DES = values['TUTO_SLIDE1_DES'];
-        this.TUTO_SLIDE2_OPC = values['TUTO_SLIDE2_OPC'];
-        this.TUTO_SLIDE2_OPC1 = values['TUTO_SLIDE2_OPC1'];
-        this.TUTO_SLIDE2_OPC2 = values['TUTO_SLIDE2_OPC2'];
-        this.TUTO_SLIDE3_TITLE = values['TUTO_SLIDE3_TITLE'];
-        this.TUTO_SLIDE3_MENUT = values['TUTO_SLIDE3_MENUT'];
-        this.TUTO_SLIDE3_MENUD = values['TUTO_SLIDE3_MENUD'];
-        this.TUTO_SLIDE3_PERFILT = values['TUTO_SLIDE3_PERFILT'];
-        this.TUTO_SLIDE3_PERFILD = values['TUTO_SLIDE3_PERFILD'];
+        this.TUTO_SLIDE2_TITLE = values['TUTO_SLIDE2_TITLE'];
+        this.TUTO_SLIDE2_DES = values['TUTO_SLIDE2_DES'];
+        this.TUTO_SLIDE3_TITLE1 = values['TUTO_SLIDE3_TITLE1'];
+        this.TUTO_SLIDE3_DES1 = values['TUTO_SLIDE3_DES1'];
+        this.TUTO_SLIDE3_TITLE2 = values['TUTO_SLIDE3_TITLE2'];
+        this.TUTO_SLIDE3_DES2 = values['TUTO_SLIDE3_DES2'];
+        this.TUTO_SLIDE3_TITLE3 = values['TUTO_SLIDE3_TITLE3'];
+        this.TUTO_SLIDE3_DES3 = values['TUTO_SLIDE3_DES3'];
         this.TUTO_SLIDE4_TITLE = values['TUTO_SLIDE4_TITLE'];
-        this.TUTO_SLIDE4_BUSCART = values['TUTO_SLIDE4_BUSCART'];
-        this.TUTO_SLIDE4_BUSCARD = values['TUTO_SLIDE4_BUSCARD'];
-        this.TUTO_SLIDE4_FOLLOWT = values['TUTO_SLIDE4_FOLLOWT'];
-        this.TUTO_SLIDE4_FOLLOWD = values['TUTO_SLIDE4_FOLLOWD'];
+        this.TUTO_SLIDE4_DES = values['TUTO_SLIDE4_DES'];
+        this.TUTO_SLIDE5_TITLE = values['TUTO_SLIDE5_TITLE'];
+        this.TUTO_SLIDE5_DES = values['TUTO_SLIDE5_DES'];
+        this.TUTO_SLIDE6_TITLE= values['TUTO_SLIDE6_TITLE'];
+        this.TUTO_SLIDE6_DES = values['TUTO_SLIDE6_DES'];
         this.TITLE_DELETE_POLL = values['TITLE_DELETE_POLL'];
+        this.profiletitle = values['TUTO_SLIDE3_TITLE1.0'];
   
       
   

@@ -112,6 +112,9 @@ import { Device } from '@ionic-native/device';
 import { ChuzzonProvider } from '../providers/chuzzon/chuzzon';
 import {ItemDetailsPageCommentModule} from '../pages/item-details-comment/item-details-comment.module';
 import {ItemDetailsPageFormeModule} from '../pages/item-details-form/item-details-form.module';
+import { PusherServiceProvider } from '../providers/pusher-service/pusher-service';
+import { CommentsProvider } from '../providers/comments/comments';
+
 //import {IService} from '../providers/service/IService';
 //import { Deeplinks } from '@ionic-native/deeplinks';
 
@@ -293,6 +296,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     InAppBrowser,
     SocialSharing,
     ChuzzonProvider,
+    PusherServiceProvider,
+    CommentsProvider,
     //IService,
     //Deeplinks
   ]

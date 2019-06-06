@@ -16,6 +16,7 @@ import { BasePage } from '../base-page';
 import { TabsPage } from '../tabs/tabs';
 import {Observable} from 'rxjs'; // Angular 6 
 import { Answer } from '../../models/answer';
+import {ItemDetailsPageComment} from '../../pages/item-details-comment/item-details-comment';
 
 import { ADMOB_IOS_UNIT_ID, ADMOB_ANDROID_UNIT_ID, ADMOB_IS_TESTING, ADMOB_IOS_BANNER_ID, ADMOB_ANDROID_BANNER_ID } from '../../utils/constants';
 
@@ -47,6 +48,7 @@ export class PollQuestionPage extends BasePage {
   contador_ans = 0;
   answers = {};
   withImages = false;
+  comment;
   resultWithImage: boolean = false;
   isWelcomePoll: boolean = false;
 
@@ -72,10 +74,11 @@ export class PollQuestionPage extends BasePage {
     this.results = [];
 
     this.translateService.get([
-      'LOADING_CONTENT', 'CONEXION_ERROR_MESSAGE_TITLE', 'CONEXION_ERROR_MESSAGE_TEXT',]).subscribe(values => {
+      'LOADING_CONTENT','COMMENT', 'CONEXION_ERROR_MESSAGE_TITLE', 'CONEXION_ERROR_MESSAGE_TEXT',]).subscribe(values => {
         this.loadingtext = values['LOADING_CONTENT'];
         this.messageConexionTitle = values['CONEXION_ERROR_MESSAGE_TITLE'];
         this.messageConexionText = values['CONEXION_ERROR_MESSAGE_TEXT'];
+        this.comment = values['COMMENT'];
       });
 
     this.poll = navParams.get('poll');
@@ -366,4 +369,8 @@ export class PollQuestionPage extends BasePage {
       }
     });
   }
+  opencomment() {
+    //this.nav.push(ItemDetailsPageComment, {fromMenu: true});
+    this.navCtrl.push(ItemDetailsPageComment, { poll: this.poll});
+   }
 }

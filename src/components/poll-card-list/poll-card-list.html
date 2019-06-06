@@ -46,13 +46,16 @@
           <ion-row no-padding >
           <ion-col>
             
-
-            <button ion-button clear icon-left icon-only float-right    (click)="onPollShareClick(p)" class="button-toggle">
-              <ion-icon ios="ios-share-alt" md="md-share-alt"></ion-icon>
-            </button>
             <button *ngIf="p.user.id == currentUser" ion-button clear icon-left icon-only float-right  (click)="onPollDeleteClick(p)"   class="button-toggle">
               <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
             </button>
+            <button ion-button clear icon-left icon-only float-right    (click)="onPollShareClick(p)" class="button-toggle">
+              <span>Chuzz-on</span>
+              <ion-icon ios="ios-paper-plane" md="md-paper-plane"></ion-icon>
+              
+            </button>
+            
+            
             <!--
 <button  ion-button clear icon-left icon-only float-right (click)="opencomment(p)"   class="button-toggle">
               <ion-icon name="chatbubbles"></ion-icon>

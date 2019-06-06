@@ -1,5 +1,50 @@
 /* #Style -- Comment - Commnets Basic
 ================================================*/
 comment-layout-1 {
+  
+    ion-textarea {
+        border-bottom: 1px solid #000000;
+        margin: 0px 5px;
+    }
+    p {
+        text-align: justify;
+    }
+
+ 
+        .comment-box {
+            overflow: scroll;
+            height: 650px;
+            margin-top: -13%;
+        }
+    
+
+   
+    
+      ion-item-options {
+        border-bottom: 1px solid transparent !important;
+      }
+      ion-item-sliding {
+        border-bottom: 0.1px solid transparent !important;
+        position: relative;
+        display: list-item;   
+      }
+      
+      ion-footer {
+        background-color: white;
+      }
+
+      ion-label {
+        background-color: #ffffff;
+        padding: 10px;
+       /* @extend .box-shadow ;*/
+      }    
+      ion-item p{
+        margin-top: 1.8% !important;
+        margin-bottom: -1.5% !important;
+      }
+      .time{
+        color: #8e9093;
+        font-size: 13px;
+      }
 }
   

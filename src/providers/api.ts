@@ -231,7 +231,12 @@ checkUserPhone(phone: string){
     const query = new skygear.Query(Chuzzon);
     return skygear.publicDB.query(query);
   }
-
+  comment(pollid){
+    const Comment = skygear.Record.extend('comment');
+    const query = new skygear.Query(Comment);
+    query.equalTo('poll_id', pollid);
+    return skygear.publicDB.query(query);
+  }
   
 
   actUserReferenceCount(recordiD, value) {

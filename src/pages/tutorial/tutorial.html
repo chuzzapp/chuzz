@@ -6,16 +6,103 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content no-bounce>
+<ion-content class="content content-tuto" no-bounce>
   <ion-slides pager="true" (ionWillChange)="onSlideChangeStart($event)">
-    <!--
-<ion-slide *ngFor="let slide of slides">
-      <img [src]="slide.image" class="slide-image" />
-      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-      <p [innerHTML]="slide.description"></p>
-    </ion-slide>
-    -->
+
     <ion-slide>
+
+      <img src="assets/img/loginen.png" class="slide-image" />
+      <h2 class="slide-title">{{ TUTO_SLIDE1_TITLE  }}</h2>
+      <p>{{TUTO_SLIDE1_DES }}</p>
+    </ion-slide>
+
+    <ion-slide>
+
+      <img src="assets/img/encuesta.png" class="slide-image" />
+      <h2 class="slide-title">{{ TUTO_SLIDE2_TITLE }}</h2>
+      <p>{{ TUTO_SLIDE2_DES  }}
+    </ion-slide>
+    <ion-slide id="slidesmall">
+      <h2 >{{profiletitle}}</h2>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div> <img src="assets/img/editcountry.png"></div>
+          </ion-col>
+          <ion-col>
+            <div>
+                <h3>{{TUTO_SLIDE3_TITLE1  }}</h3>
+              <p>{{TUTO_SLIDE3_DES1  }}
+              </p></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div> <img src="assets/img/categories.png"></div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <h3>{{TUTO_SLIDE3_TITLE2  }}</h3>
+              <p>{{TUTO_SLIDE3_DES2  }}
+              </p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div> <img src="assets/img/polls.png"></div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <h3>{{ TUTO_SLIDE3_TITLE3 }}</h3>
+              <p>{{ TUTO_SLIDE3_DES3  }}
+              </p>
+            </div>
+          </ion-col>
+        </ion-row>
+     
+      </ion-grid>
+      <!--
+      <h2 class="slide-title">PAIS ACTIVO:</h2>
+      <img   src="assets/img/chuzzon.png" class="slide-image3" />
+      <p >(Selecciona o cambia de pais activo). Menu->Mi Perfil->Pais->Rueda y Selecciona->Ok
+     </p>
+     
+     <h2 class="slide-title">MIS ENCUESTAS /MIS RESPUESTAS: </h2>
+     <img  src="assets/img/chuzzon.png" class="slide-image3" />
+     <p >Dentro de tu perfil de usuario, en MIS  ENCUESTAS, revisa los resultados actualizados de las encuestas que tu has posteado y en MIS RESPUESTAS Revisa resultados de las encuestas que tu has respondido.  Menu->Mi Perfil -> MIS RESPUESTAS (o MIS ENCUESTAS)->Selecciona la encuesta.</p>
+    <h2 class="slide-title">CATEGORIAS: </h2>
+     <img   src="assets/img/chuzzon.png" class="slide-image3" />
+     <p>Tu puedes escojer los topicos sobre los que deseas opinar. Menu->Categorias->Seleccionar (Nota: las categorias son especificas para cada pais)</p>
+    </ion-slide>
+    <ion-slide >
+      
+      <img  src="assets/img/chuzzon.png" class="slide-image" />
+      <h2 class="slide-title">CHUZZ-ON</h2>
+      <p>Presiona el icono resaltado con el circulo naranja para reenviar a tus seguidores todas las encuestas que te parezcan interesantes.  Sobre cada tarjeta de encuesta: Simplemente presiona la flecha que vez .
+     </p>-->
+    </ion-slide>
+    <ion-slide>
+
+      <img src="assets/img/chuzzon.png" class="slide-image" />
+      <h2 class="slide-title">{{ TUTO_SLIDE4_TITLE }} </h2>
+      <p>{{ TUTO_SLIDE4_DES}}</p>
+    </ion-slide>
+    <ion-slide>
+
+      <img src="assets/img/searchbar.png" class="slide-image" />
+      <h2 class="slide-title">{{ TUTO_SLIDE5_TITLE }} </h2>
+      <p>{{ TUTO_SLIDE5_DES  }}</p>
+    </ion-slide>
+    <ion-slide>
+
+      <img src="assets/img/chuzzersinfl.png" class="slide-image" />
+      <h2 class="slide-title">{{TUTO_SLIDE6_TITLE }}</h2>
+      <p>{{ TUTO_SLIDE6_DES  }}</p>
+    </ion-slide>
+
+    <!--
+  <ion-slide>
       <img src="assets/img/1.jpg" class="slide-image1" />
       <h2 class="slide-title1">{{ 'TUTO_SLIDE1_TITLE' | translate }}</h2>
       <p>{{ 'TUTO_SLIDE1_DES' | translate }}</p>
@@ -23,7 +110,8 @@
     <ion-slide>
       <img src="assets/img/2.jpg" class="slide-image2" />
       <ul>
-        <li>{{ 'TUTO_SLIDE2_OPC' | translate }} <ion-icon name="menu"></ion-icon> </li>
+        <li>{{ 'TUTO_SLIDE2_OPC' | translate }} <ion-icon name="menu"></ion-icon>
+        </li>
         <li>{{ 'TUTO_SLIDE2_OPC1' | translate }} </li>
         <li>{{ 'TUTO_SLIDE2_OPC2' | translate }} </li>
       </ul>
@@ -32,25 +120,25 @@
     </ion-slide>
     <ion-slide>
       <img src="assets/img/3.jpg" class="slide-image3" />
-      
-      <ion-row >
+
+      <ion-row>
         <ion-col>
           <div>
-            <h2>{{ 'TUTO_SLIDE3_PERFILT' | translate }}</h2><br>
+            <h2 class="texto">{{ 'TUTO_SLIDE3_PERFILT' | translate }}</h2><br>
             <p>{{ 'TUTO_SLIDE3_PERFILD' | translate }}</p>
           </div>
         </ion-col>
         <ion-col>
           <div>
-            <h2>{{ 'TUTO_SLIDE3_MENUT' | translate }}</h2><br>
+            <h2 class="texto" >{{ 'TUTO_SLIDE3_MENUT' | translate }}</h2><br>
             <p>{{ 'TUTO_SLIDE3_MENUD' | translate }}</p>
           </div>
-            
-     
+
+
 
         </ion-col>
       </ion-row>
-      <h2 class="slide-title3">{{ 'TUTO_SLIDE3_TITLE' | translate }}</h2> 
+      <h2 class="slide-title3">{{ 'TUTO_SLIDE3_TITLE' | translate }}</h2>
     </ion-slide>
     <ion-slide>
       <img src="assets/img/5.jpg" class="slide-image4" />
@@ -66,15 +154,35 @@
             <h2> {{ 'TUTO_SLIDE4_FOLLOWT' | translate }}</h2><br>
             <p>{{ 'TUTO_SLIDE4_FOLLOWD' | translate }}</p>
           </div>
-            
-     
+
+
 
         </ion-col>
       </ion-row>
       <h2 class="slide-title4">{{ 'TUTO_SLIDE4_TITLE' | translate }} </h2>
       <p></p>
+
+    </ion-slide>
+    
+<ion-slide>
+      <img src="assets/img/6.jpg" class="slide-image5" />
+      <h2 class="slide-title5">Crea y publica tus encuestas en <b>chuzz</b></h2>
+      <ion-row >
+        <p>1. Abre Menú lateral 2. Escoge "Crear Encuesta" 3. Ingresa los datos de tu Encuesta.</p>
+        <p>Ponle Titulo a tu encuesta.</p>
+      </ion-row>
+      <ion-row class="rowoption">
+        <p>Agrega portada a tu encuesta.</p>
+        <p>Estalece la fecha de inicio</p>
+        <p>Estalece la fecha de expiración</p>
+        <p>Estalece si el contenido es para adultos o no.</p>
+        <p>Crea tus preguntas con tus respectivas respuestas.</p>
+      </ion-row>
+      
+      <p></p>
      
     </ion-slide>
+  
     <!--
 <ion-slide>
       <img src="assets/img/5.jpg" class="slide-image5" />

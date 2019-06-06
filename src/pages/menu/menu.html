@@ -46,12 +46,13 @@
                 <h2 padding-left>{{ 'CREATE_POLL' | translate }}</h2>
             </button>
 
-            <!--
-                <button  *ngIf="!platformweb && showCreatePollMenu" menuToggle ion-item (click)="openTutorial()">
+
+            <!--<button  *ngIf="!platformweb && showCreatePollMenu" menuToggle ion-item (click)="openTutorial()">-->
+            <button  menuToggle ion-item (click)="openTutorial()">
                 <img float-left padding-right src="assets/img/icons/ic_about_selected.png" />
                 <h2 padding-left>Tutorial</h2>
             </button>
-            -->
+
 
         </ion-list>
     </ion-content>

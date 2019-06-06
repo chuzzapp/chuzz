@@ -221,6 +221,6 @@ export class PollPage extends BasePage {
   }
   opencomment(pollId) {
     //this.nav.push(ItemDetailsPageComment, {fromMenu: true});
-    this.navCtrl.push(ItemDetailsPageComment, { poll: this.currentPoll});
+    this.navCtrl.push(ItemDetailsPageComment, { poll: pollId});
    }
 }

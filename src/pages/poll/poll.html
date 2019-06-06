@@ -68,28 +68,20 @@
  
 </ion-content>
 
-<button ion-button large block round margin-left text-capitalize color="chuzz-default" (click)="answerPoll()" class="fixed-end"*ngIf="!pollEnded && showAnswerButton" >
-  {{ allAnswered ? 'Result' : 'ANSWER' | translate }}
-</button>
-<!--
-<ion-row  class="fixed-end" >
-  <ion-col>
-    <div>
-   
-    </div>
-  </ion-col>
-  <ion-col>
-    <button ion-button  large block  margin-left text-capitalize color="chuzz-default" (click)="opencomment(currentPoll)" round>
-      Comment
-    </button>
-    
-      
-    
 
-  </ion-col>
+
+ 
   
-</ion-row>
--->
+    <div>
+      <button ion-button large block round margin-left text-capitalize color="chuzz-default" (click)="answerPoll()" *ngIf="!pollEnded && showAnswerButton" class="fixed-end"  >
+        {{ allAnswered ? 'Result' : 'ANSWER' | translate }}
+      </button>
+    </div>
+ 
+ 
+  
+
+
 
 
 

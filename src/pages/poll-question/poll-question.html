@@ -49,6 +49,9 @@
 <button ion-button large full color="chuzz-default" (click)="backToTab()" class="fixed-end" [ngClass]="{'right-half' : (currentQNumber > 1)}" *ngIf="currentQuestion.answered && currentQNumber >= numberOfQuestions">
   {{ 'EXIT' | translate }}
 </button>
+<button ion-button large full color="chuzz-default" (click)="opencomment()" class="fixed-end"  *ngIf="currentQuestion.answered">
+  {{comment}}
+</button>
 <button ion-button large full color="chuzz-default" (click)="nextQuestion()" class="fixed-end" [ngClass]="{'right-half' : (currentQNumber > 1)}" *ngIf="(currentQuestion.answered || poll.is_live) && currentQNumber < numberOfQuestions">
   {{ 'NEXT' | translate }}
 </button>
