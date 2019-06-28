@@ -25,7 +25,7 @@ import { UserProvider } from '../../providers/providers';
 })
 export class AboutPage extends BasePage {
 
-  currentAppVersion: string = '1.5.3';
+  currentAppVersion: string = '1.5.4';
   SOCIAL_SHARE_OPTIONS;
   SHARE_MSG_PART1;
   SHARE_MSG_PART2;
