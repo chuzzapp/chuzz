@@ -63,7 +63,7 @@
     "cordova-plugin-crop": "^0.4.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-file": "^5.0.0",
-    "cordova-plugin-inappbrowser": "^3.0.0",
+    "cordova-plugin-inappbrowser": "^3.1.0",
     "cordova-plugin-jasonkit-imagepicker": "^2.1.12",
     "cordova-plugin-localization-strings": "^2.0.0",
     "cordova-plugin-photo-library": "^2.1.1",
